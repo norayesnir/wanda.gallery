@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const _3_roomThree = "{\"parsed\":{\"_path\":\"/room-three\",\"_dir\":\"\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"_empty\":true,\"title\":\"Underwater\",\"description\":\"\",\"icon\":\"ic:round-meeting-room\",\"scene\":\"<a-scene vr-mode-ui=\\\"enabled: false\\\" embedded><a-entity position=\\\"0 -1 3\\\" scale=\\\"0.5 0.5 0.5\\\"><a-camera zoom=\\\"0.8\\\" fov=\\\"80\\\" near=\\\"0.001\\\" far=\\\"50\\\"></a-camera></a-entity><a-torus-knot color=\\\"#ffffff\\\" segments-tubular=\\\"124\\\" radius=\\\"1\\\" radius-tubular=\\\"0.1\\\" wireframe=\\\"true\\\"><a-animation easing=\\\"linear\\\" attribute=\\\"rotation\\\" repeat=\\\"indefinite\\\" dur=\\\"30000\\\" to=\\\"360 360 360\\\"></a-animation></a-torus-knot></a-scene>\",\"body\":{\"type\":\"root\",\"children\":[],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:3.room-three.md\",\"_source\":\"content\",\"_file\":\"3.room-three.md\",\"_extension\":\"md\"},\"hash\":\"p5rxnuGwwq\"}";
+
+export { _3_roomThree as default };
+//# sourceMappingURL=3.room-three.mjs.map

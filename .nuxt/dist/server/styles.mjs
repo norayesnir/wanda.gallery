@@ -1,8 +1,8 @@
 const interopDefault = r => r.default || r || []
 export default {
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?component=async": () => import('./_nuxt/ProseCode-styles.93005832.mjs').then(interopDefault),
-  "node_modules/nuxt-icon/dist/runtime/Icon.vue?component=async": () => import('./_nuxt/Icon-styles.95b220bc.mjs').then(interopDefault),
   "node_modules/nuxt-icon/dist/runtime/IconCSS.vue?component=async": () => import('./_nuxt/IconCSS-styles.c7f1e3fc.mjs').then(interopDefault),
+  "node_modules/nuxt-icon/dist/runtime/Icon.vue?component=async": () => import('./_nuxt/Icon-styles.95b220bc.mjs').then(interopDefault),
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue": () => import('./_nuxt/ProseCode-styles.93005832.mjs').then(interopDefault),
   "pages/index.vue": () => import('./_nuxt/index-styles.844f6ce3.mjs').then(interopDefault),
   "pages/[...slug].vue": () => import('./_nuxt/_...slug_-styles.47efd0be.mjs').then(interopDefault),
