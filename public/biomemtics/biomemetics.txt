@@ -1,0 +1,91 @@
+Biomemtics
+1.Foot-bot swarm. Swarm robotics IDSIA©Wanda Tuerlinckx
+2.Underactuated hand prothesis with compliant control. University of Twente©Wanda Tuerlinckx
+3.Cheetah. Fast Running Energy Efficeient Quadruped. University of Twente©Wanda Tuerlinckx
+4.ANGELAA knee prothesis. TU Delft©Wanda Tuerlinckx
+5.Robird Jerrie. Clear Flight Solutions©Wanda Tuerlinckx
+6.Delft Biorobotics Lab©Wanda Tuerlinckx
+7.DelFly. MAVlab Delft University of Technology©Wanda Tuerlinckx
+8.Robot SCAMP. Mark R. Cutkosky Biomimetics and Dextrous Manipulation Lab©Wanda Tuerlinckx
+9.Dual-Hemi Continuously Variable Transmission. University of Twente©Wanda Tuerlinckx
+10.FLAME robot. Delft Biorobotics Lab©Wanda Tuerlinckx
+11.Interact Centaur Rover. European Space Agency©Wanda Tuerlinckx
+12.LBR iiwa robot. KUKA©Wanda Tuerlinckx
+13.PARO. EIZTZuyd©Wanda Tuerlinckx
+14.Museon Walker. Delft Biorobotics Laboratory©Wanda Tuerlinckx
+15.Mechanical Horse, built by George Harold Messmore circa 1937. Musée Mécanique  SF©Wanda Tuerlinckx
+16.Aerialtronics Altura. Clear Flight Solutions©Wanda Tuerlinckx
+17.Woodenhaptics. UCSD San Diego©Wanda Tuerlinckx
+18.Phides. Biomechanical engineering TU Delft©Wanda Tuerlinckx
+19.ReflexLeg. University of Twente©Wanda Tuerlinckx
+20.Modular and Mobile Gripping System SCHUNK©Wanda Tuerlinckx
+21.Sergio. TU Eindhoven©Wanda Tuerlinckx
+22.EDM. European Space Agency©Wanda Tuerlinckx
+23.Slacklining robot. TU Delft©Wanda Tuerlinckx
+24.USC Human Centered Robotics Lab US©Wanda Tuerlinckx
+
+Humanoids
+1.AMIGO. TU Eindhoven©Wanda Tuerlinckx
+2.Azimo. Honda Aoyama Building Tokyo Japan©Wanda Tuerlinckx
+3.Bandit II. USC Human Centered Robotics Lab US©Wanda Tuerlinckx
+4.CB2. Asada Research Group Osaka Japan©Wanda Tuerlinckx
+5.CommU. Ishiguro Lab Osaka University Japan©Wanda Tuerlinckx
+6.Hermes. USC. LA©Wanda Tuerlinckx
+7.Hermes. USC Human Centered Robotics lab©Wanda Tuerlinckx
+8.Fetch. Institute of Contextual Robotics©Wanda Tuerlinckx
+9.InMoov©Wanda Tuerlinckx
+10.KASPAR. EIZTZuyd ©Wanda Tuerlinckx
+11.KOBIAN-R--1. TakanishiLaboratory of Waseda University Tokyo©Wanda Tuerlinckx
+12.KOBIAN-R--1. TakanishiLaboratory of Waseda University Tokyo©Wanda Tuerlinckx
+13.NAO©Wanda Tuerlinckx
+14.Open Source 3D printed life-size robot InMoove©Wanda Tuerlinckx
+15.Pepper. SoftBank Robotics©Wanda Tuerlinckx
+16.REEM-C PAL ROBOTICS©Wanda Tuerlinckx
+17.Robby. Delft University of Technology©Wanda Tuerlinckx
+18.RUBI project. Machine Perception Lab. UCSD San Diego.©Wanda Tuerlinckx
+19.RUBI-4. Machine Perception Lab©Wanda Tuerlinckx
+20.TIAGo. MObile Manipulator. PAL ROBOTICS©Wanda Tuerlinckx
+21.WABIAN. TakanishiLaboratory of Waseda University Tokyo©Wanda Tuerlinckx
+22.WABIAN. TakanishiLaboratory of Waseda University Tokyo©Wanda Tuerlinckx
+23.Wabot-2. Waseda University Tokyo©Wanda Tuerlinckx
+24.iCub. Asada Research Group in Osaka©Wanda Tuerlinckx
+25.RoboTheSpian. Engineered Arts©Wanda Tuerlinckx
+
+Androids
+1.Ai-Da. Oxford UK©Wanda Tuerlinckx
+2.Ai-Da. Oxford UK©Wanda Tuerlinckx
+3.AndroidU. Osaka University Osaka Japan©Wanda Tuerlinckx
+4.Sophia. Hanson Robotics Ltd Hong Kong©Wanda Tuerlinckx
+5.Philip K. Dick Android LARRI US©Wanda Tuerlinckx
+6.BINA48. TMF Vermont US©Wanda Tuerlinckx
+7.Erica. Hiroshi Ishiguro Laboratories Kyoto Japan©Wanda Tuerlinckx
+8.Geminoid F. Hiroshi Ishiguro Laboratories Kyoto Japan©Wanda Tuerlinckx
+9.Geminoid F2. Hiroshi Ishiguro Laboratories Kyoto Japan©Wanda Tuerlinckx
+10.Hi-2. ATR Hiroshi Ishiguro Laboratories Kyoto Japan©Wanda Tuerlinckx
+11.Otonaroid. Miraikan Museum Tokyo Japan©Wanda Tuerlinckx
+12.Natsume Soseki. Nishogakusha University Tokyo Japan©Wanda Tuerlinckx
+13.Professor Ishiguro and HI-4. ATR Hiroshi Ishiguro Labaratories Kyoto Japan©Wanda Tuerlinckx
+14.Diego San, Qualcomm Institute University of California San Diego US©Wanda Tuerlinckx
+15.Repliee S1. Hiroshi ishiguro Laboratories Japan©Wanda Tuerlinckx
+16.Jules UWE Bristol UK©Wanda Tuerlinckx
+17.Telenoid R1. ATR Kyoto Japan©Wanda Tuerlinckx
+18.Kansei II. Robot Science Lab, Meiji University Tokyo Japan©Wanda Tuerlinckx
+19.Ameca. Engineered Arts UK©Wanda Tuerlinckx
+20.Ameca. Engineered Arts UK©Wanda Tuerlinckx
+21.Ameca. Engineered Arts UK©Wanda Tuerlinckx
+22.Harmony. Realbotix LA US©Wanda Tuerlinckx
+23.Adran.Engineered Arts UK©Wanda Tuerlinckx
+24.The dancing white man. Leonard van Munster©Wanda Tuerlinckx
+25.Affetto. Asada Research Group Osaka Japan©Wanda Tuerlinckx
+
+
+
+
+
+
+
+
+
+
+
+

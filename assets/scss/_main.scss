@@ -1,0 +1,38 @@
+@use 'abstracts' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+img{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden !important;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+ol,ul{
+  margin: 0;
+  padding: 0;
+
+  li{
+    margin: 0;
+    padding: 0;
+
+    a{
+      color: var(--foreground);
+      text-decoration: none;
+    }
+  }
+}
