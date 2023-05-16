@@ -37,4 +37,21 @@ export default defineNuxtConfig({
       }
     },
   },
+
+  build: {
+    extend(config) {
+      // Find the nuxt:components:imports plugin
+      const nuxtComponentsImportsPlugin = config.plugins.find(
+        (plugin: { name: string; }) => plugin.name === 'nuxt:components:imports'
+      );
+
+      if (nuxtComponentsImportsPlugin) {
+        // Disable sourcemap generation for the plugin
+        nuxtComponentsImportsPlugin.options = {
+          ...nuxtComponentsImportsPlugin.options,
+          sourceMap: false,
+        };
+      }
+    },
+  },
 })
