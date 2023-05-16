@@ -5,7 +5,7 @@ export default {
     scene: {
       type: String,
       required: true,
-      default: '<a-scene><a-entity mobile-controls><a-text value="No scene rendered" color="#fff" position="0 4 -5" align="center"geometry="primitive: plane; width: 4; height: .5" material="color: #333"></a-text></a-entity></a-scene>'
+      default: '<a-scene><a-entity><a-text value="No scene rendered" color="#fff" position="0 4 -5" align="center"geometry="primitive: plane; width: 4; height: .5" material="color: #333"></a-text></a-entity></a-scene>'
     }
   }
 }

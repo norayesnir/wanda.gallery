@@ -7,12 +7,6 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://aframe.io/releases/1.2.0/aframe.min.js',
-        },
-        {
-          src: '~aframe/mobile-controls.js'
-        },
-        {
-          src: '~aframe/glue.js'
         }
       ]
     }
@@ -34,23 +28,6 @@ export default defineNuxtConfig({
     clients: {
       default: {
         httpEndpoint: 'https://admin.wanda.gallery/graphql'
-      }
-    },
-  },
-
-  build: {
-    extend(config) {
-      // Find the nuxt:components:imports plugin
-      const nuxtComponentsImportsPlugin = config.plugins.find(
-        (plugin: { name: string; }) => plugin.name === 'nuxt:components:imports'
-      );
-
-      if (nuxtComponentsImportsPlugin) {
-        // Disable sourcemap generation for the plugin
-        nuxtComponentsImportsPlugin.options = {
-          ...nuxtComponentsImportsPlugin.options,
-          sourceMap: false,
-        };
       }
     },
   },

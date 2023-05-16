@@ -73,39 +73,41 @@ const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
     </a-assets>
 
     <!-- Scene -->
-    <a-entity 
-      v-for="(artwork, index) in data.artworks.data" 
-      :key="artwork.id" 
-      :position="entities[index].position" 
-      :rotation="entities[index].rotation"
-    >
-      <a-image 
-        :src="artwork.url" 
-        :alt="kebabCase(artwork.title)" 
-        :id="kebabCase(artwork.title)" 
-        width="1.6" 
-        height="2"
-      ></a-image>
+    <a-entity id="mario">
+      <a-entity 
+        v-for="(artwork, index) in data.artworks.data" 
+        :key="artwork.id" 
+        :position="entities[index].position" 
+        :rotation="entities[index].rotation"
+      >
+        <a-image 
+          :src="artwork.url" 
+          :alt="kebabCase(artwork.title)" 
+          :id="kebabCase(artwork.title)" 
+          width="1.6" 
+          height="2"
+        ></a-image>
 
-      <!-- <a-entity
-        geometry="primitive: plane; height: 2; width: 1.6;"
-        :material="'src: #' + entities[index].text"
-        :src="artwork.url"
-        mixin="poster"
-      ></a-entity> -->
+        <!-- <a-entity
+          geometry="primitive: plane; height: 2; width: 1.6;"
+          :material="'src: #' + entities[index].text"
+          :src="artwork.url"
+          mixin="poster"
+        ></a-entity> -->
 
-      <a-text 
-        class="title"
-        baseline="bottom"
-        position="1 .7 0"
-        :value="artwork.title"
-      ></a-text>
-      <a-text 
-        class="description"
-        baseline="top"
-        position="1 .5 0"
-        :value="artwork.description"
-      ></a-text>
+        <a-text 
+          class="title"
+          baseline="bottom"
+          position="1 .7 0"
+          :value="artwork.title"
+        ></a-text>
+        <a-text 
+          class="description"
+          baseline="top"
+          position="1 .5 0"
+          :value="artwork.description"
+        ></a-text>
+      </a-entity>
     </a-entity>
   </a-scene>
 </template>
