@@ -71,7 +71,7 @@ export default {
       @touchend.prevent="stopTimer()"
       class="up"
     >
-      <img class="arrow" src="controls/arrow-foreground.svg" alt="arrow">
+      <Arrow class="arrow" />
     </button>
     <button 
       @mousedown="startTimer('left')" 
@@ -81,7 +81,7 @@ export default {
       @touchend.prevent="stopTimer()"
       class="left"
     >
-      <img class="arrow" src="controls/arrow-foreground.svg" alt="arrow">
+      <Arrow class="arrow" />
     </button>
     <button 
       @mousedown="startTimer('down')" 
@@ -91,7 +91,7 @@ export default {
       @touchend.prevent="stopTimer()"
       class="down"
     >
-      <img class="arrow" src="controls/arrow-foreground.svg" alt="arrow">
+      <Arrow class="arrow" />
     </button>
     <button 
       @mousedown="startTimer('right')" 
@@ -101,7 +101,7 @@ export default {
       @touchend.prevent="stopTimer()"
       class="right"
     >
-      <img class="arrow" src="controls/arrow-foreground.svg" alt="arrow">
+      <Arrow class="arrow" />
     </button>
   </div>
 </template>

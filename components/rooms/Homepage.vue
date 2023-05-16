@@ -70,15 +70,7 @@ const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
         :src="artwork.url"
         crossorigin="anonymous"
       >
-
-      <img
-        src="space.webp"
-        alt="space"
-        id="space"
-      >
     </a-assets>
-
-    <!-- <a-sky id="space"></a-sky> -->
 
     <!-- Scene -->
     <a-entity 
