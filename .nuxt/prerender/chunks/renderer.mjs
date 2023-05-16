@@ -3,7 +3,7 @@ import { eventHandler, setResponseStatus, getQuery, createError } from 'file:///
 import { renderToString } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/vue/server-renderer/index.mjs';
 import { u as useNitroApp, a as useRuntimeConfig, g as getRouteRules } from './nitro/nitro-prerenderer.mjs';
 import { joinURL } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/ufo/dist/index.mjs';
-import 'file:///Users/rinseyaron/wanda.gallery/node_modules/nitropack/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///Users/rinseyaron/wanda.gallery/node_modules/node-fetch-native/dist/polyfill.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/ofetch/dist/node.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/destr/dist/index.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/unenv/runtime/fetch/index.mjs';

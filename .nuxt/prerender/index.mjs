@@ -1,4 +1,4 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/rinseyaron/wanda.gallery/node_modules/nitropack/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/rinseyaron/wanda.gallery/node_modules/node-fetch-native/dist/polyfill.mjs';
 export { l as localFetch } from './chunks/nitro/nitro-prerenderer.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/h3/dist/index.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/ofetch/dist/node.mjs';

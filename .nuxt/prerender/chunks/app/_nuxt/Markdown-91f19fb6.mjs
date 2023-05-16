@@ -25,7 +25,7 @@ import 'file:///Users/rinseyaron/wanda.gallery/node_modules/@iconify/vue/dist/of
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/@iconify/vue/dist/iconify.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/defu/dist/defu.mjs';
 import '../../nitro/nitro-prerenderer.mjs';
-import 'file:///Users/rinseyaron/wanda.gallery/node_modules/nitropack/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///Users/rinseyaron/wanda.gallery/node_modules/node-fetch-native/dist/polyfill.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/unenv/runtime/fetch/index.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/scule/dist/index.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/unstorage/dist/index.mjs';

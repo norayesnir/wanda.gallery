@@ -23,7 +23,7 @@ import { Icon as Icon$1 } from 'file:///Users/rinseyaron/wanda.gallery/node_modu
 import { loadIcon } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/@iconify/vue/dist/iconify.mjs';
 import { defu } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/defu/dist/defu.mjs';
 import { a as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
-import 'file:///Users/rinseyaron/wanda.gallery/node_modules/nitropack/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///Users/rinseyaron/wanda.gallery/node_modules/node-fetch-native/dist/polyfill.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/unenv/runtime/fetch/index.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/scule/dist/index.mjs';
 import 'file:///Users/rinseyaron/wanda.gallery/node_modules/unstorage/dist/index.mjs';
@@ -1288,7 +1288,7 @@ function writeServerCookie(event, name, value, opts = {}) {
     appendHeader(event, "Set-Cookie", serializeCookie(name, value, opts));
   }
 }
-const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" }, { "charset": "uft-8" }], "link": [], "style": [], "script": [{ "src": "https://aframe.io/releases/1.2.0/aframe.min.js" }, { "src": "~aframe/mobile-controls.js" }, { "src": "~aframe/glue.js" }], "noscript": [], "charset": "uft-8", "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" };
+const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" }, { "charset": "uft-8" }], "link": [], "style": [], "script": [{ "src": "https://aframe.io/releases/1.2.0/aframe.min.js" }], "noscript": [], "charset": "uft-8", "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" };
 const appPageTransition = false;
 const appKeepalive = false;
 const firstNonUndefined = (...args) => args.find((arg) => arg !== void 0);
@@ -1670,7 +1670,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-07727b56.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-9df9d4d2.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -9217,23 +9217,13 @@ const RouteProvider = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_main$1 = {
-  mounted() {
-    const script = document.createElement("script");
-    script.src = "https://aframe.io/releases/1.2.0/aframe.min.js";
-    script.onload = () => {
-      AFRAME.registerAll();
-      this.$refs.aScene.addState("loaded");
-    };
-    document.head.appendChild(script);
-  }
-};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+const _sfc_main$1 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NavigationMenu = __nuxt_component_0;
   const _component_NuxtPage = __nuxt_component_1;
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "app" }, _attrs))} data-v-188c3a06>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "app" }, _attrs))} data-v-b76c1836>`);
   _push(ssrRenderComponent(_component_NavigationMenu, null, null, _parent));
-  _push(`<div class="page-content" data-v-188c3a06>`);
+  _push(`<div class="page-content" data-v-b76c1836>`);
   _push(ssrRenderComponent(_component_NuxtPage, null, null, _parent));
   _push(`</div></div>`);
 }
@@ -9243,7 +9233,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-188c3a06"]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-b76c1836"]]);
 const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,

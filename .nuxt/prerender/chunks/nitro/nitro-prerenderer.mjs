@@ -1,4 +1,4 @@
-import 'file:///Users/rinseyaron/wanda.gallery/node_modules/nitropack/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///Users/rinseyaron/wanda.gallery/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseStatus, setResponseHeader, getRequestHeaders, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/h3/dist/index.mjs';
 import { createFetch as createFetch$1, Headers } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/ofetch/dist/node.mjs';
 import destr from 'file:///Users/rinseyaron/wanda.gallery/node_modules/destr/dist/index.mjs';
@@ -71,7 +71,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1684226274814,
+      "integrity": 1684228764066,
       "experimental": {
         "stripQueryParameters": false,
         "clientDB": false,
@@ -3820,7 +3820,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _LYH7LY, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _LYH7LY, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _LYH7LY, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1684226274814.json', handler: _A0ClnE, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1684228764066.json', handler: _A0ClnE, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _yr1PZg, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _yr1PZg, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _yr1PZg, lazy: false, middleware: false, method: "get" },
