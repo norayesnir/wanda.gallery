@@ -1,9 +1,14 @@
 <template>
   <div>
-    <ControlsPopup />
     <div class="flex">
-      <RoomsHomepage />
+      <section class="section-one">
+        <HomepageHero />
+      </section>
+      <section class="section-two">
+        <HomepageCategorySelection/>
+      </section>
     </div>
+    <AppFooter />
   </div>
 </template>
 
@@ -11,7 +16,30 @@
   .flex{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     flex-direction: column;
+
+    padding: 0 48px;
+  }
+
+  .section-one{
+    height: calc(100vh - 96px);
+    display: flex;
+    align-items: center;
+  }
+
+
+  .section-two{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-height: 1000px) {
+    .section-one, .section-two{
+      height: initial !important;
+      display: initial;
+    }
   }
 </style>

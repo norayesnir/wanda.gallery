@@ -7,7 +7,7 @@ import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/std-env/dist/index.mjs';
 import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///Users/rinseyaron/wanda.gallery/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { stringify, uneval } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/devalue/index.js';
 import { renderToString } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/vue/server-renderer/index.mjs';
 import { createFetch as createFetch$1, Headers } from 'file:///Users/rinseyaron/wanda.gallery/node_modules/ofetch/dist/node.mjs';
 import destr from 'file:///Users/rinseyaron/wanda.gallery/node_modules/destr/dist/index.mjs';
@@ -4007,6 +4007,7 @@ globalThis.__publicAssetsURL = publicAssetsURL;
 const getClientManifest = () => import('/Users/rinseyaron/wanda.gallery/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
 const getServerEntry = () => import('/Users/rinseyaron/wanda.gallery/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -4061,7 +4062,7 @@ const getSPARenderer = lazyCachedFunction(async () => {
     renderToString
   };
 });
-const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.js(\?.*)?$/;
+const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.json(\?.*)?$/ ;
 const renderer = defineRenderHandler(async (event) => {
   const nitroApp = useNitroApp();
   const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery$1(event) : null;
@@ -4076,7 +4077,7 @@ const renderer = defineRenderHandler(async (event) => {
   }
   const islandContext = void 0;
   let url = ssrError?.url || islandContext?.url || event.node.req.url;
-  const isRenderingPayload = PAYLOAD_URL_RE.test(url);
+  const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !islandContext;
   if (isRenderingPayload) {
     url = url.substring(0, url.lastIndexOf("/")) || "/";
     event.node.req.url = url;
@@ -4115,14 +4116,14 @@ const renderer = defineRenderHandler(async (event) => {
     return response2;
   }
   const renderedMeta = await ssrContext.renderMeta?.() ?? {};
-  const inlinedStyles = "";
+  const inlinedStyles = Boolean(islandContext) ? await renderInlineStyles(ssrContext.modules ?? ssrContext._registeredComponents ?? []) : "";
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const htmlContext = {
     island: Boolean(islandContext),
     htmlAttrs: normalizeChunks([renderedMeta.htmlAttrs]),
     head: normalizeChunks([
       renderedMeta.headTags,
-      null,
+      null ,
       NO_SCRIPTS ? null : _rendered.renderResourceHints(),
       _rendered.renderStyles(),
       inlinedStyles,
@@ -4135,7 +4136,7 @@ const renderer = defineRenderHandler(async (event) => {
     ]),
     body: [_rendered.html],
     bodyAppend: normalizeChunks([
-      NO_SCRIPTS ? void 0 : renderPayloadScript({ ssrContext, data: ssrContext.payload }),
+      NO_SCRIPTS ? void 0 : renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: ssrContext.payload }) ,
       routeOptions.experimentalNoScripts ? void 0 : _rendered.renderScripts(),
       // Note: bodyScripts may contain tags other than <script>
       renderedMeta.bodyScripts
@@ -4181,20 +4182,38 @@ function renderHTMLDocument(html) {
 <body ${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body>
 </html>`;
 }
+async function renderInlineStyles(usedModules) {
+  const styleMap = await getSSRStyles();
+  const inlinedStyles = /* @__PURE__ */ new Set();
+  for (const mod of usedModules) {
+    if (mod in styleMap) {
+      for (const style of await styleMap[mod]()) {
+        inlinedStyles.add(`<style>${style}</style>`);
+      }
+    }
+  }
+  return Array.from(inlinedStyles).join("");
+}
 function renderPayloadResponse(ssrContext) {
   return {
-    body: `export default ${devalue(splitPayload(ssrContext).payload)}`,
+    body: stringify(splitPayload(ssrContext).payload, ssrContext._payloadReducers) ,
     statusCode: ssrContext.event.node.res.statusCode,
     statusMessage: ssrContext.event.node.res.statusMessage,
     headers: {
-      "content-type": "text/javascript;charset=utf-8",
+      "content-type": "application/json;charset=utf-8" ,
       "x-powered-by": "Nuxt"
     }
   };
 }
-function renderPayloadScript(opts) {
-  opts.data.config = opts.ssrContext.config;
-  return `<script>window.__NUXT__=${devalue(opts.data)}<\/script>`;
+function renderPayloadJsonScript(opts) {
+  const attrs = [
+    'type="application/json"',
+    `id="${opts.id}"`,
+    `data-ssr="${!(opts.ssrContext.noSSR)}"`,
+    opts.src ? `data-src="${opts.src}"` : ""
+  ].filter(Boolean);
+  const contents = opts.data ? stringify(opts.data, opts.ssrContext._payloadReducers) : "";
+  return `<script ${attrs.join(" ")}>${contents}<\/script><script>window.__NUXT__={};window.__NUXT__.config=${uneval(opts.ssrContext.config)}<\/script>`;
 }
 function splitPayload(ssrContext) {
   const { data, prerenderedAt, ...initial } = ssrContext.payload;
@@ -4214,5 +4233,12 @@ const _virtual__headStatic = {"headTags":"<meta charset=\"uft-8\">\n<meta name=\
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
       __proto__: null,
       default: _virtual__headStatic
+});
+
+const styles = {};
+
+const styles$1 = /*#__PURE__*/Object.freeze({
+      __proto__: null,
+      default: styles
 });
 //# sourceMappingURL=index.mjs.map

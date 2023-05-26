@@ -1,32 +1,33 @@
 <template>
   <div 
-    @click="hamburgerMenuToggled = (hamburgerMenuToggled == false ? true : false)"
-    class="hamburger"
+    @click="navigation.toggleNavigation"
+    class="navigation-hamburger"
   >
-    <Icon 
-      v-if="!hamburgerMenuToggled"
-      name="ic:outline-menu" 
-      size="2em"
+    <Icon v-if="!navigation.navigationState"
+      name="ic:outline-menu"
+      size="24"
     />
-    <Icon
-      v-else
+    <Icon v-else
       name="ic:outline-close"
-      size="2em"
+      size="24"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-  import { storeToRefs } from "pinia";
-  import { useNavigationMenuStore } from "~/store/navigationMenuStore"
+import { useNavigationMenuStore } from "~/store/navigationMenuStore"
 
-  const main = useNavigationMenuStore();
-
-  const { hamburgerMenuToggled } = storeToRefs(main);
+const navigation = useNavigationMenuStore();
 </script>
 
 <style scoped lang="scss">
-div > *{
+.icon{
   color: var(--foreground);
+}
+
+@media screen and (min-width: 550px) {
+  .navigation-hamburger{
+    display: none;
+  }
 }
 </style>

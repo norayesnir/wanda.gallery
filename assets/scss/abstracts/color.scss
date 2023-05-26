@@ -1,14 +1,17 @@
 :root{
-  --foreground: #ffffff;
-  --background: #000000;
+  --foreground: #151515;
+  --background: #ffffff;
 
-  --foreground-opacity-50: #ffffff80;
-  --background-opacity-50: #00000080;
+  --foreground-opacity-50: #00000080;
+  --background-opacity-50: #ffffff80;
 
   --card-background: #101010;
   --card-background-hover: #202020;
   
   --icon-background-hover: #363636;
 
-  --text-color: red;
+  --primary: #000000;
+  --secondary: #1E1E1E;
+
+  --navigation-border: #DDDDDD;
 }

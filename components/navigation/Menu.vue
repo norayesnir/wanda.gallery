@@ -1,91 +1,114 @@
 <template>
   <div 
     class="navigation-menu"
-    :class="{'align-top' : hamburgerMenuToggled}"
+    :class="{ 'navigation-menu__active': navigation.navigationState }"
   >
-    <div 
-      class="options"
-    >
-      <div class="hamburger-logo-flex">
-        <NavigationHamburger />
-
-        <NuxtLink to="/">
-          <h2>Wanda Experience</h2>
-        </NuxtLink>
-      </div>
+    <div class="navigation-logo">
+      <CompanyLogo />
     </div>
-    <div 
-      class="navigation-content"
-      :class="{'menu-active' : hamburgerMenuToggled}"
-    >
-      <NavigationContent v-if="hamburgerMenuToggled"/>
+    <div class="navigation-routes">
+      <NavigationRoute />
+    </div>
+    <div class="navigation-icons">
+      <NavigationHamburger/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { storeToRefs } from "pinia";
-  import { useNavigationMenuStore } from "~/store/navigationMenuStore"
+import { useNavigationMenuStore } from "~/store/navigationMenuStore"
 
-  const main = useNavigationMenuStore();
-
-  const { hamburgerMenuToggled } = storeToRefs(main);
+const navigation = useNavigationMenuStore();
 </script>
 
 <style scoped lang="scss">
-  .navigation-menu{
-    position: fixed;
-    z-index: 100;
-    width: 100%;
+  .navigation-menu{    
+    padding: 20px 48px;
+    background: linear-gradient(180deg, #BCC6CC 0%, rgba(194, 203, 208, 0.8) 100%, rgba(188, 198, 204, 0) 100%);
 
-    .options{
+    display: grid;
+    align-items: center;
+    align-items: stretch;
+
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: 1fr;
+
+    .navigation-logo{
+      width: min-content;
       display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding: 16px 6px;
       align-items: center;
+      justify-content: left;
 
-      //Glassmorphism
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
+      grid-area: 1 / 1;
     }
 
-    .navigation-content{
+    .navigation-routes{
       position: relative;
+      display: none;
+      visibility: hidden;
+      justify-content: center;
+      height: min-content;
+      margin-top: 64px;
+      
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 4;
     }
 
-    .hamburger-logo-flex{
+    .navigation-icons{
       display: flex;
+      gap: 16px;
+      justify-content: right;
       align-items: center;
-      gap: 20px;
+      margin-left: 6px;
+      
+      grid-area: 1 / 3;
+    }
+  }
 
-      h2{
-        font-weight: 100;
-        text-transform: uppercase;
+  .navigation-menu__active{
+    grid-template-rows: min-content 1fr;
+    height: 100%;
+
+    .navigation-routes{
+      display: flex;
+      visibility: visible;
+      justify-content: left;
+
+      .routes{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navigation-image{
+        display: inline-block !important;
+        visibility: visible !important;
+        position: fixed;
+        bottom: -50px;
+        left: -50px;
+        max-height: 300px;
       }
     }
   }
 
-  .align-top{
-    align-items: flex-start;
-  }
-
-  .menu-active{
-    height: calc(100vh - 54px);
-    width: 100%;
-  }
-
-  .click-outside{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  @media screen and (max-width: 950px) {
+  @media screen and (min-width: 550px) {
     .navigation-menu{
-      min-width: calc(100% - 32px);
+      grid-template-rows: 1fr;
+      .navigation-logo{
+        grid-area: 1;
+      }
+
+      .navigation-routes{
+        height: 48px;
+        display: flex;
+        visibility: visible;
+        grid-area: 1;
+        margin-top: 0;
+      }
+
+      .navigation-appearance{
+        grid-area: 1;
+      }
     }
   }
 </style>

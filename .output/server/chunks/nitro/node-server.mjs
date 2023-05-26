@@ -76,7 +76,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1684229645188,
+      "integrity": 1685105003446,
       "experimental": {
         "stripQueryParameters": false,
         "clientDB": false,
@@ -278,27 +278,27 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
 const _assets = {
   ["nitro:bundled:cache:content:content-index.json"]: {
     import: () => import('../raw/content-index.mjs').then(r => r.default || r),
-    meta: {"type":"application/json","etag":"\"92-kbpkiZ2+RvX1pYo6DGAh3yG3nZU\"","mtime":"2023-05-16T09:34:12.125Z"}
+    meta: {"type":"application/json","etag":"\"92-kbpkiZ2+RvX1pYo6DGAh3yG3nZU\"","mtime":"2023-05-26T12:43:30.196Z"}
   },
   ["nitro:bundled:cache:content:content-navigation.json"]: {
     import: () => import('../raw/content-navigation.mjs').then(r => r.default || r),
-    meta: {"type":"application/json","etag":"\"a9-HFDyiLs8AE+/j1/FZoHQvbLOMi0\"","mtime":"2023-05-16T09:34:12.125Z"}
+    meta: {"type":"application/json","etag":"\"a9-HFDyiLs8AE+/j1/FZoHQvbLOMi0\"","mtime":"2023-05-26T12:43:30.196Z"}
   },
   ["nitro:bundled:cache:content:parsed:content:0.index.md"]: {
     import: () => import('../raw/0.index.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"198-hXuaBYHSv0Opbm/5lXK6RSIrZeQ\"","mtime":"2023-05-16T09:34:12.126Z"}
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"198-hXuaBYHSv0Opbm/5lXK6RSIrZeQ\"","mtime":"2023-05-26T12:43:30.197Z"}
   },
   ["nitro:bundled:cache:content:parsed:content:1.room-one.md"]: {
     import: () => import('../raw/1.room-one.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"1cf-2myEt4CpfRpkgvmS4AoMKsOEcVw\"","mtime":"2023-05-16T09:34:12.125Z"}
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"1cf-2myEt4CpfRpkgvmS4AoMKsOEcVw\"","mtime":"2023-05-26T12:43:30.197Z"}
   },
   ["nitro:bundled:cache:content:parsed:content:2.room-two.md"]: {
     import: () => import('../raw/2.room-two.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"2f9-soTAHkLttRHWIGbylFertbHBg5M\"","mtime":"2023-05-16T09:34:12.125Z"}
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"2f9-soTAHkLttRHWIGbylFertbHBg5M\"","mtime":"2023-05-26T12:43:30.197Z"}
   },
   ["nitro:bundled:cache:content:parsed:content:3.room-three.md"]: {
     import: () => import('../raw/3.room-three.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"355-9QSc1Sz5UhGl9CuY9HeLIntPi10\"","mtime":"2023-05-16T09:34:12.126Z"}
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"355-9QSc1Sz5UhGl9CuY9HeLIntPi10\"","mtime":"2023-05-26T12:43:30.197Z"}
   }
 };
 
@@ -717,381 +717,1158 @@ const errorHandler = (async function errorhandler(error, event) {
 const assets = {
   "/.DS_Store": {
     "type": "text/plain; charset=utf-8",
-    "etag": "\"1804-EeyMy7fTHvKkmKZtxERp+4vhT4s\"",
-    "mtime": "2023-05-16T09:34:09.866Z",
+    "etag": "\"1804-/qWiGYoO/4jumVbSDwRvvn7/yPw\"",
+    "mtime": "2023-05-26T12:43:28.001Z",
     "size": 6148,
     "path": "../public/.DS_Store"
   },
-  "/_nuxt/ContentDoc.cda77d30.js": {
-    "type": "application/javascript",
-    "etag": "\"797-5vQA1KpRS7SwmJuHNKsoNc57lHA\"",
-    "mtime": "2023-05-16T09:34:09.865Z",
-    "size": 1943,
-    "path": "../public/_nuxt/ContentDoc.cda77d30.js"
+  "/dc1-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"21260-5USdcdV5yLi8bcOrEGA28IMkg08\"",
+    "mtime": "2023-05-26T12:43:27.929Z",
+    "size": 135776,
+    "path": "../public/dc1-wanda-tuerlinckx.webp"
   },
-  "/_nuxt/ContentList.71f34a1e.js": {
-    "type": "application/javascript",
-    "etag": "\"342-IU4TNDiOOh8TqHm3jA5cbGGxpO8\"",
-    "mtime": "2023-05-16T09:34:09.865Z",
-    "size": 834,
-    "path": "../public/_nuxt/ContentList.71f34a1e.js"
+  "/erica-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"716c8-g7gYy4TEpnVXupeyuN4chRj+abU\"",
+    "mtime": "2023-05-26T12:43:27.928Z",
+    "size": 464584,
+    "path": "../public/erica-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp"
   },
-  "/_nuxt/ContentNavigation.bccef0d6.js": {
-    "type": "application/javascript",
-    "etag": "\"628-l+v5u8H11z8Y+J/B3st4kZmhXvE\"",
-    "mtime": "2023-05-16T09:34:09.865Z",
-    "size": 1576,
-    "path": "../public/_nuxt/ContentNavigation.bccef0d6.js"
+  "/logo.png": {
+    "type": "image/png",
+    "etag": "\"124e1a-RY3/aD/7ZEWtAfv1ukCjSaIR3GM\"",
+    "mtime": "2023-05-26T12:43:27.893Z",
+    "size": 1199642,
+    "path": "../public/logo.png"
   },
-  "/_nuxt/ContentQuery.4e72b8ba.js": {
-    "type": "application/javascript",
-    "etag": "\"88f-5fUbd8NO6hvkssZmfDlTNudocCI\"",
-    "mtime": "2023-05-16T09:34:09.864Z",
-    "size": 2191,
-    "path": "../public/_nuxt/ContentQuery.4e72b8ba.js"
+  "/space.jpg": {
+    "type": "image/jpeg",
+    "etag": "\"705141-Du0N8p92Jw4Br/qWfeGiR3HyQM0\"",
+    "mtime": "2023-05-26T12:43:27.882Z",
+    "size": 7360833,
+    "path": "../public/space.jpg"
   },
-  "/_nuxt/ContentRenderer.4092f8e5.js": {
-    "type": "application/javascript",
-    "etag": "\"4d2-Any2WyKgi8gTjCLCvmxU702GzX0\"",
-    "mtime": "2023-05-16T09:34:09.864Z",
-    "size": 1234,
-    "path": "../public/_nuxt/ContentRenderer.4092f8e5.js"
+  "/androids/.DS_Store": {
+    "type": "text/plain; charset=utf-8",
+    "etag": "\"1804-3y++sUAKzaCQmjLBz2v0kvESHgc\"",
+    "mtime": "2023-05-26T12:43:28.000Z",
+    "size": 6148,
+    "path": "../public/androids/.DS_Store"
   },
-  "/_nuxt/ContentRendererMarkdown.8e654094.js": {
-    "type": "application/javascript",
-    "etag": "\"576f-7FksN5zIsCI3tB1zcljWuo+7PTk\"",
-    "mtime": "2023-05-16T09:34:09.864Z",
-    "size": 22383,
-    "path": "../public/_nuxt/ContentRendererMarkdown.8e654094.js"
+  "/androids/adran-engineered-arts-uk-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"83a94-/NvAMsvHkBxuS/bDLPoCjyKO650\"",
+    "mtime": "2023-05-26T12:43:28.000Z",
+    "size": 539284,
+    "path": "../public/androids/adran-engineered-arts-uk-wanda-tuerlinckx.webp"
   },
-  "/_nuxt/ContentSlot.55c11a63.js": {
-    "type": "application/javascript",
-    "etag": "\"3c2-6xZS+/dAUjEQVyndfHgOvoHTzvQ\"",
-    "mtime": "2023-05-16T09:34:09.864Z",
-    "size": 962,
-    "path": "../public/_nuxt/ContentSlot.55c11a63.js"
+  "/androids/ai-da-oxford-uk-wanda-tuerlinckx-with-dress.webp": {
+    "type": "image/webp",
+    "etag": "\"34d14-5Ru/RWvrWC4HRCLDvzmAZT96hrY\"",
+    "mtime": "2023-05-26T12:43:27.999Z",
+    "size": 216340,
+    "path": "../public/androids/ai-da-oxford-uk-wanda-tuerlinckx-with-dress.webp"
   },
-  "/_nuxt/ControlsPopup.17131a8b.css": {
+  "/androids/ai-da-oxford-uk-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"3a290-UWoBna+o41mUaJY/US+aszUA23Y\"",
+    "mtime": "2023-05-26T12:43:27.998Z",
+    "size": 238224,
+    "path": "../public/androids/ai-da-oxford-uk-wanda-tuerlinckx.webp"
+  },
+  "/androids/ameca-engineered-arts-uk-wanda-tuerlinckx-position-one.webp": {
+    "type": "image/webp",
+    "etag": "\"7baec-T/hJmbrsCqMF/3cI8sI1jP5qklE\"",
+    "mtime": "2023-05-26T12:43:27.997Z",
+    "size": 506604,
+    "path": "../public/androids/ameca-engineered-arts-uk-wanda-tuerlinckx-position-one.webp"
+  },
+  "/androids/ameca-engineered-arts-uk-wanda-tuerlinckx-position-three.webp": {
+    "type": "image/webp",
+    "etag": "\"73c9c-MsGj/6eM8+L5ekRxviQmccnFjck\"",
+    "mtime": "2023-05-26T12:43:27.996Z",
+    "size": 474268,
+    "path": "../public/androids/ameca-engineered-arts-uk-wanda-tuerlinckx-position-three.webp"
+  },
+  "/androids/ameca-engineered-arts-uk-wanda-tuerlinckx-position-two.webp": {
+    "type": "image/webp",
+    "etag": "\"8e878-zS4+HjIHsJQwDDpp2b0chdvybic\"",
+    "mtime": "2023-05-26T12:43:27.992Z",
+    "size": 583800,
+    "path": "../public/androids/ameca-engineered-arts-uk-wanda-tuerlinckx-position-two.webp"
+  },
+  "/androids/android-u-osaka-university-osaka-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"51f92-4a9RcOLta/1iEdT+GGI1GMzP/IA\"",
+    "mtime": "2023-05-26T12:43:27.990Z",
+    "size": 335762,
+    "path": "../public/androids/android-u-osaka-university-osaka-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/bina-48-tmf-vermont-us-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"8a7f2-X8S7acdjt3cADJ3EOx7NJl71TS0\"",
+    "mtime": "2023-05-26T12:43:27.990Z",
+    "size": 567282,
+    "path": "../public/androids/bina-48-tmf-vermont-us-wanda-tuerlinckx.webp"
+  },
+  "/androids/diego-san-qualcomm-institute-university-of-california-san-diego-us-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"71d14-Le9yqEndXt530HQ2G/9d2mCLgFI\"",
+    "mtime": "2023-05-26T12:43:27.988Z",
+    "size": 466196,
+    "path": "../public/androids/diego-san-qualcomm-institute-university-of-california-san-diego-us-wanda-tuerlinckx.webp"
+  },
+  "/androids/geminoid-f-2-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"789a0-kkychkOMVyyhskw3tRltiYqm/5Q\"",
+    "mtime": "2023-05-26T12:43:27.988Z",
+    "size": 493984,
+    "path": "../public/androids/geminoid-f-2-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/geminoid-f-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"8f80e-OZVyh6ciiCYcEEmvVB5vKMH50HI\"",
+    "mtime": "2023-05-26T12:43:27.986Z",
+    "size": 587790,
+    "path": "../public/androids/geminoid-f-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/harmony-realbotix-la-us-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"79b3c-9erPZJ2zhrfFInWYgK8iBhj1cvM\"",
+    "mtime": "2023-05-26T12:43:27.985Z",
+    "size": 498492,
+    "path": "../public/androids/harmony-realbotix-la-us-wanda-tuerlinckx.webp"
+  },
+  "/androids/hi-2-atr-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"81290-8NLQjaksWuMd7WL2+yGQ3xl8Abo\"",
+    "mtime": "2023-05-26T12:43:27.984Z",
+    "size": 529040,
+    "path": "../public/androids/hi-2-atr-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/jules-uwe-bristol-uk-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"945ee-FjAaQL9/f920+HXYWnHkD711FmU\"",
+    "mtime": "2023-05-26T12:43:27.980Z",
+    "size": 607726,
+    "path": "../public/androids/jules-uwe-bristol-uk-wanda-tuerlinckx.webp"
+  },
+  "/androids/kansei-i-robot-science-lab-meiji-university-tokyo-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"80262-txaS+lB4XkuPdwWF9t4K2NfGsxg\"",
+    "mtime": "2023-05-26T12:43:27.978Z",
+    "size": 524898,
+    "path": "../public/androids/kansei-i-robot-science-lab-meiji-university-tokyo-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/kansei-ii-robot-science-lab-meiji-university-tokyo-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"6f3c6-f0CsWnf5L1TPYJNIIbCt0BcFbQI\"",
+    "mtime": "2023-05-26T12:43:27.977Z",
+    "size": 455622,
+    "path": "../public/androids/kansei-ii-robot-science-lab-meiji-university-tokyo-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/natsume-soseki-nishogakusha-university-tokyo-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"88164-FrSkGMWrck3D4Y3geaDcJIoqwSw\"",
+    "mtime": "2023-05-26T12:43:27.976Z",
+    "size": 557412,
+    "path": "../public/androids/natsume-soseki-nishogakusha-university-tokyo-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/otonaroid-miraikan-museum-tokyo-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"8158e-Zyy8t0CNG0bEiTpzOnkeo1kGbbU\"",
+    "mtime": "2023-05-26T12:43:27.975Z",
+    "size": 529806,
+    "path": "../public/androids/otonaroid-miraikan-museum-tokyo-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/philip-k-dick-android-larri-us-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"99da6-8Q1n/MI3C7OCpbC0KoSAmg69BAM\"",
+    "mtime": "2023-05-26T12:43:27.972Z",
+    "size": 630182,
+    "path": "../public/androids/philip-k-dick-android-larri-us-wanda-tuerlinckx.webp"
+  },
+  "/androids/professor-ishiguro-and-hi-4-atr-hiroshi-ishiguro-labaratories-kyoto-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"93230-fb45dcijhVAYvHymCfQSA9aVmpU\"",
+    "mtime": "2023-05-26T12:43:27.971Z",
+    "size": 602672,
+    "path": "../public/androids/professor-ishiguro-and-hi-4-atr-hiroshi-ishiguro-labaratories-kyoto-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/repliee-s-1-hiroshi-ishiguro-laboratories-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"6ee48-3OxH2zjrZX0oMuiyAIl26gOxgG4\"",
+    "mtime": "2023-05-26T12:43:27.969Z",
+    "size": 454216,
+    "path": "../public/androids/repliee-s-1-hiroshi-ishiguro-laboratories-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/sophia-hanson-robotics-ltd-hong-kong-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"72476-ut4sEha17GwmTrcxNfBH9ZwFAK0\"",
+    "mtime": "2023-05-26T12:43:27.968Z",
+    "size": 468086,
+    "path": "../public/androids/sophia-hanson-robotics-ltd-hong-kong-wanda-tuerlinckx.webp"
+  },
+  "/androids/telenoid-r-1-atr-kyoto-japan-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"597b0-QybWM7tInhEJ+BAsmsBCG4pSAnM\"",
+    "mtime": "2023-05-26T12:43:27.967Z",
+    "size": 366512,
+    "path": "../public/androids/telenoid-r-1-atr-kyoto-japan-wanda-tuerlinckx.webp"
+  },
+  "/androids/the-dancing-white-man-leonard-van-munster-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"7a930-RF7oo5hJ8+0Eg4+dyEOj/Ha5WNE\"",
+    "mtime": "2023-05-26T12:43:27.966Z",
+    "size": 502064,
+    "path": "../public/androids/the-dancing-white-man-leonard-van-munster-wanda-tuerlinckx.webp"
+  },
+  "/_nuxt/Aframe.4fe53ae8.js": {
+    "type": "application/javascript",
+    "etag": "\"20a-RStstzCa/+IzIJjn5Hjk5i38oMI\"",
+    "mtime": "2023-05-26T12:43:27.820Z",
+    "size": 522,
+    "path": "../public/_nuxt/Aframe.4fe53ae8.js"
+  },
+  "/_nuxt/Aframe.a6174522.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"a35-PeDi50/Jcl6KvkdP4o4SwiTlKRQ\"",
-    "mtime": "2023-05-16T09:34:09.864Z",
-    "size": 2613,
-    "path": "../public/_nuxt/ControlsPopup.17131a8b.css"
+    "etag": "\"68-NDiHwzQPiLoZZ4F21TNFVVphNr4\"",
+    "mtime": "2023-05-26T12:43:27.819Z",
+    "size": 104,
+    "path": "../public/_nuxt/Aframe.a6174522.css"
   },
-  "/_nuxt/ControlsPopup.ef9d8b60.js": {
-    "type": "application/javascript",
-    "etag": "\"f81-qAhuY/oQHOUXyU8LG8rA+E+QMKE\"",
-    "mtime": "2023-05-16T09:34:09.863Z",
-    "size": 3969,
-    "path": "../public/_nuxt/ControlsPopup.ef9d8b60.js"
+  "/_nuxt/AppFooter.0a10362e.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"1a2-2fx+DC4aCwh805NZOt1EIC745UU\"",
+    "mtime": "2023-05-26T12:43:27.818Z",
+    "size": 418,
+    "path": "../public/_nuxt/AppFooter.0a10362e.css"
   },
-  "/_nuxt/DocumentDrivenEmpty.a02a4d33.js": {
+  "/_nuxt/AppFooter.bd2743fc.js": {
     "type": "application/javascript",
-    "etag": "\"120-5DjKEse4znAj4ZHGUs4yvibdXg8\"",
-    "mtime": "2023-05-16T09:34:09.863Z",
+    "etag": "\"3a3-cx3vCtt0HhCOCW+QdH5iL4FKP5c\"",
+    "mtime": "2023-05-26T12:43:27.818Z",
+    "size": 931,
+    "path": "../public/_nuxt/AppFooter.bd2743fc.js"
+  },
+  "/_nuxt/Arrow.a9f4d158.js": {
+    "type": "application/javascript",
+    "etag": "\"28e-oUWrSSI/MgLNCjPpaNk8X64KIyI\"",
+    "mtime": "2023-05-26T12:43:27.817Z",
+    "size": 654,
+    "path": "../public/_nuxt/Arrow.a9f4d158.js"
+  },
+  "/_nuxt/Button.4669cb1f.js": {
+    "type": "application/javascript",
+    "etag": "\"191-uoJbjnrs9rIF65ruLbfG5liVRJ0\"",
+    "mtime": "2023-05-26T12:43:27.816Z",
+    "size": 401,
+    "path": "../public/_nuxt/Button.4669cb1f.js"
+  },
+  "/_nuxt/Button.7f1d1633.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"e6-GThNEqewlQXxSr7mhe8XFFreuvM\"",
+    "mtime": "2023-05-26T12:43:27.816Z",
+    "size": 230,
+    "path": "../public/_nuxt/Button.7f1d1633.css"
+  },
+  "/_nuxt/CategorySelection.a6af7e83.js": {
+    "type": "application/javascript",
+    "etag": "\"3a8-pT9KS2fc8JErV2quvv9cLBiw+m0\"",
+    "mtime": "2023-05-26T12:43:27.816Z",
+    "size": 936,
+    "path": "../public/_nuxt/CategorySelection.a6af7e83.js"
+  },
+  "/_nuxt/CategorySelection.b3adb7ce.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"402-8pnuc/702/aByFDhArCvpoZTY3M\"",
+    "mtime": "2023-05-26T12:43:27.815Z",
+    "size": 1026,
+    "path": "../public/_nuxt/CategorySelection.b3adb7ce.css"
+  },
+  "/_nuxt/Contact.9244f316.js": {
+    "type": "application/javascript",
+    "etag": "\"2bd-PjBcMNi9rcHrhSC7fczVjH+ZCFM\"",
+    "mtime": "2023-05-26T12:43:27.815Z",
+    "size": 701,
+    "path": "../public/_nuxt/Contact.9244f316.js"
+  },
+  "/_nuxt/Contact.b9486889.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"20c-3QreEnQvrpmLUds7xfTEp4jSdFU\"",
+    "mtime": "2023-05-26T12:43:27.815Z",
+    "size": 524,
+    "path": "../public/_nuxt/Contact.b9486889.css"
+  },
+  "/_nuxt/ContentDoc.ae51a700.js": {
+    "type": "application/javascript",
+    "etag": "\"7e8-z6w1OKRWdhveuvt7uUiyZ94XZnY\"",
+    "mtime": "2023-05-26T12:43:27.814Z",
+    "size": 2024,
+    "path": "../public/_nuxt/ContentDoc.ae51a700.js"
+  },
+  "/_nuxt/ContentList.d0cedb9d.js": {
+    "type": "application/javascript",
+    "etag": "\"398-a4xbIyV8ARdUAF7g2RqDzfosGmY\"",
+    "mtime": "2023-05-26T12:43:27.814Z",
+    "size": 920,
+    "path": "../public/_nuxt/ContentList.d0cedb9d.js"
+  },
+  "/_nuxt/ContentNavigation.9f70eb49.js": {
+    "type": "application/javascript",
+    "etag": "\"6d6-5cdLE8MIhUeZH5TWFsiezs8veBk\"",
+    "mtime": "2023-05-26T12:43:27.814Z",
+    "size": 1750,
+    "path": "../public/_nuxt/ContentNavigation.9f70eb49.js"
+  },
+  "/_nuxt/ContentQuery.98111475.js": {
+    "type": "application/javascript",
+    "etag": "\"8ea-n87ITLclbZEvYfsdytcOJmRE9h0\"",
+    "mtime": "2023-05-26T12:43:27.814Z",
+    "size": 2282,
+    "path": "../public/_nuxt/ContentQuery.98111475.js"
+  },
+  "/_nuxt/ContentRenderer.bbca5a7b.js": {
+    "type": "application/javascript",
+    "etag": "\"4f0-+kZ3cjFhhg12ETfYpvS/HXzBwm0\"",
+    "mtime": "2023-05-26T12:43:27.813Z",
+    "size": 1264,
+    "path": "../public/_nuxt/ContentRenderer.bbca5a7b.js"
+  },
+  "/_nuxt/ContentRendererMarkdown.650ab81a.js": {
+    "type": "application/javascript",
+    "etag": "\"5792-SwvDR91MZlPe1knc+Tsrsv31uV4\"",
+    "mtime": "2023-05-26T12:43:27.813Z",
+    "size": 22418,
+    "path": "../public/_nuxt/ContentRendererMarkdown.650ab81a.js"
+  },
+  "/_nuxt/ContentSlot.1cda2f09.js": {
+    "type": "application/javascript",
+    "etag": "\"406-TLeFL56ztqLTmel8hqvLP65dKsg\"",
+    "mtime": "2023-05-26T12:43:27.813Z",
+    "size": 1030,
+    "path": "../public/_nuxt/ContentSlot.1cda2f09.js"
+  },
+  "/_nuxt/Controls.63f4c45b.js": {
+    "type": "application/javascript",
+    "etag": "\"93f-JxlygTIrT9hxU1p0IduEBoE6MAg\"",
+    "mtime": "2023-05-26T12:43:27.812Z",
+    "size": 2367,
+    "path": "../public/_nuxt/Controls.63f4c45b.js"
+  },
+  "/_nuxt/Controls.dfe76354.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"48e-GI1l7xyHA1vLkL5/JLhixeMHC74\"",
+    "mtime": "2023-05-26T12:43:27.812Z",
+    "size": 1166,
+    "path": "../public/_nuxt/Controls.dfe76354.css"
+  },
+  "/_nuxt/ControlsPopup.46953cde.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"5ac-OigjBatNL50bKRfwjvF+13pxJMA\"",
+    "mtime": "2023-05-26T12:43:27.809Z",
+    "size": 1452,
+    "path": "../public/_nuxt/ControlsPopup.46953cde.css"
+  },
+  "/_nuxt/ControlsPopup.62f311cd.js": {
+    "type": "application/javascript",
+    "etag": "\"4cc-Hzna+lJtXrlBaDQOuMVkSpX9yho\"",
+    "mtime": "2023-05-26T12:43:27.807Z",
+    "size": 1228,
+    "path": "../public/_nuxt/ControlsPopup.62f311cd.js"
+  },
+  "/_nuxt/DocumentDrivenEmpty.ab371fa7.js": {
+    "type": "application/javascript",
+    "etag": "\"120-NNvR69YE5AOm+jBDozE2MK8Kfa0\"",
+    "mtime": "2023-05-26T12:43:27.806Z",
     "size": 288,
-    "path": "../public/_nuxt/DocumentDrivenEmpty.a02a4d33.js"
+    "path": "../public/_nuxt/DocumentDrivenEmpty.ab371fa7.js"
   },
-  "/_nuxt/DocumentDrivenNotFound.a8f03741.js": {
+  "/_nuxt/DocumentDrivenNotFound.b191a253.js": {
     "type": "application/javascript",
-    "etag": "\"9f-XHc6yC3Cfg8EdRzwmKOA4jfpSro\"",
-    "mtime": "2023-05-16T09:34:09.863Z",
+    "etag": "\"9f-pq9bvMaGdFHz3y4o6tr/rkxj2I8\"",
+    "mtime": "2023-05-26T12:43:27.806Z",
     "size": 159,
-    "path": "../public/_nuxt/DocumentDrivenNotFound.a8f03741.js"
+    "path": "../public/_nuxt/DocumentDrivenNotFound.b191a253.js"
+  },
+  "/_nuxt/Hero.9c4b47a9.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"337-ysLJP4SGlD0CqR0cs/jmsDh6rFA\"",
+    "mtime": "2023-05-26T12:43:27.806Z",
+    "size": 823,
+    "path": "../public/_nuxt/Hero.9c4b47a9.css"
+  },
+  "/_nuxt/Hero.ee96af44.js": {
+    "type": "application/javascript",
+    "etag": "\"2ed-hMLLd4meY+RKCAgB900GwOwjZPE\"",
+    "mtime": "2023-05-26T12:43:27.806Z",
+    "size": 749,
+    "path": "../public/_nuxt/Hero.ee96af44.js"
+  },
+  "/_nuxt/IconCSS.025ac80d.js": {
+    "type": "application/javascript",
+    "etag": "\"35c-sTQxQ1C3KhdIdvDbzkjVvPkKzjE\"",
+    "mtime": "2023-05-26T12:43:27.806Z",
+    "size": 860,
+    "path": "../public/_nuxt/IconCSS.025ac80d.js"
   },
   "/_nuxt/IconCSS.05fd33c5.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"102-PPDHA9Vz07CRse/hknRw9WThNwU\"",
-    "mtime": "2023-05-16T09:34:09.863Z",
+    "mtime": "2023-05-26T12:43:27.805Z",
     "size": 258,
     "path": "../public/_nuxt/IconCSS.05fd33c5.css"
   },
-  "/_nuxt/IconCSS.fc71f7ce.js": {
+  "/_nuxt/Markdown.cd29e386.js": {
     "type": "application/javascript",
-    "etag": "\"359-SiHDg/333wwrXdetxUlZXH+YUOA\"",
-    "mtime": "2023-05-16T09:34:09.862Z",
-    "size": 857,
-    "path": "../public/_nuxt/IconCSS.fc71f7ce.js"
+    "etag": "\"183-MYug8r7oxb14Aa6UAyY84GMS93Y\"",
+    "mtime": "2023-05-26T12:43:27.805Z",
+    "size": 387,
+    "path": "../public/_nuxt/Markdown.cd29e386.js"
   },
-  "/_nuxt/Markdown.dbf2f5fd.js": {
+  "/_nuxt/ProseA.8a742712.js": {
     "type": "application/javascript",
-    "etag": "\"149-RpoptAe4V+Grw3XN7DmCJGvRth4\"",
-    "mtime": "2023-05-16T09:34:09.862Z",
-    "size": 329,
-    "path": "../public/_nuxt/Markdown.dbf2f5fd.js"
-  },
-  "/_nuxt/ProseA.e5b9fd13.js": {
-    "type": "application/javascript",
-    "etag": "\"166-N1uPsbxBZib+u5cAPVBP3ajce0w\"",
-    "mtime": "2023-05-16T09:34:09.862Z",
+    "etag": "\"166-OSC4ZRy+49BKmIF6b/MwyR4n6pU\"",
+    "mtime": "2023-05-26T12:43:27.805Z",
     "size": 358,
-    "path": "../public/_nuxt/ProseA.e5b9fd13.js"
+    "path": "../public/_nuxt/ProseA.8a742712.js"
   },
-  "/_nuxt/ProseBlockquote.4273e8af.js": {
+  "/_nuxt/ProseBlockquote.80eda081.js": {
     "type": "application/javascript",
-    "etag": "\"c2-GQfKYcP9GsbVVk3/63OQnZmHpoI\"",
-    "mtime": "2023-05-16T09:34:09.862Z",
+    "etag": "\"c2-Y6Dr6q57ucLuXwY6OLHjSpVX5CI\"",
+    "mtime": "2023-05-26T12:43:27.805Z",
     "size": 194,
-    "path": "../public/_nuxt/ProseBlockquote.4273e8af.js"
+    "path": "../public/_nuxt/ProseBlockquote.80eda081.js"
   },
-  "/_nuxt/ProseCode.217b92c1.js": {
+  "/_nuxt/ProseCode.4419f3ec.js": {
     "type": "application/javascript",
-    "etag": "\"15f-C1EsSm43moATkd01aY8pOBYZNQE\"",
-    "mtime": "2023-05-16T09:34:09.861Z",
+    "etag": "\"15f-VUPPtsicVPbYmo1tFhtaE8AcZOY\"",
+    "mtime": "2023-05-26T12:43:27.804Z",
     "size": 351,
-    "path": "../public/_nuxt/ProseCode.217b92c1.js"
+    "path": "../public/_nuxt/ProseCode.4419f3ec.js"
   },
   "/_nuxt/ProseCode.e63e49c6.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"2e-GbvrqT5j9gSWlpa8e36U/Kv6Zx0\"",
-    "mtime": "2023-05-16T09:34:09.861Z",
+    "mtime": "2023-05-26T12:43:27.804Z",
     "size": 46,
     "path": "../public/_nuxt/ProseCode.e63e49c6.css"
   },
-  "/_nuxt/ProseCodeInline.474a11d9.js": {
+  "/_nuxt/ProseCodeInline.6e4f4140.js": {
     "type": "application/javascript",
-    "etag": "\"bc-aCRfIgitmawnz9em86j9hQl1oig\"",
-    "mtime": "2023-05-16T09:34:09.861Z",
+    "etag": "\"bc-wwcDzEnx0pVvCmXmVe7ytpdR89I\"",
+    "mtime": "2023-05-26T12:43:27.804Z",
     "size": 188,
-    "path": "../public/_nuxt/ProseCodeInline.474a11d9.js"
+    "path": "../public/_nuxt/ProseCodeInline.6e4f4140.js"
   },
-  "/_nuxt/ProseEm.e478c133.js": {
+  "/_nuxt/ProseEm.1c48064b.js": {
     "type": "application/javascript",
-    "etag": "\"ba-TSBIGWKXl5oaKXYeosoK+A9GEDk\"",
-    "mtime": "2023-05-16T09:34:09.861Z",
+    "etag": "\"ba-H5aGwKJKfWjFtcvZGfj4tJBG60w\"",
+    "mtime": "2023-05-26T12:43:27.804Z",
     "size": 186,
-    "path": "../public/_nuxt/ProseEm.e478c133.js"
+    "path": "../public/_nuxt/ProseEm.1c48064b.js"
   },
-  "/_nuxt/ProseH1.a23e267b.js": {
+  "/_nuxt/ProseH1.173b2604.js": {
     "type": "application/javascript",
-    "etag": "\"1a8-x4pbABc2rRR1bPRchYz+mSQOKLE\"",
-    "mtime": "2023-05-16T09:34:09.860Z",
+    "etag": "\"1a8-8XAPKyE8OyDAu+382Oj9SRcNcts\"",
+    "mtime": "2023-05-26T12:43:27.804Z",
     "size": 424,
-    "path": "../public/_nuxt/ProseH1.a23e267b.js"
+    "path": "../public/_nuxt/ProseH1.173b2604.js"
   },
-  "/_nuxt/ProseH2.02625092.js": {
+  "/_nuxt/ProseH2.7a763b52.js": {
     "type": "application/javascript",
-    "etag": "\"1a8-xspendgWCdH7Tlswv1s05y1sQLQ\"",
-    "mtime": "2023-05-16T09:34:09.860Z",
+    "etag": "\"1a8-tQ5MJeNRiwF3qeP8T95Rg0MYfXs\"",
+    "mtime": "2023-05-26T12:43:27.803Z",
     "size": 424,
-    "path": "../public/_nuxt/ProseH2.02625092.js"
+    "path": "../public/_nuxt/ProseH2.7a763b52.js"
   },
-  "/_nuxt/ProseH3.b4960d20.js": {
+  "/_nuxt/ProseH3.4c71a8c9.js": {
     "type": "application/javascript",
-    "etag": "\"1a8-Oj+v5fa/9aGKk1+1ZjrYKvHlNCo\"",
-    "mtime": "2023-05-16T09:34:09.860Z",
+    "etag": "\"1a8-KVJ9/sCTwALbRgVTWcdfCXuiQMY\"",
+    "mtime": "2023-05-26T12:43:27.803Z",
     "size": 424,
-    "path": "../public/_nuxt/ProseH3.b4960d20.js"
+    "path": "../public/_nuxt/ProseH3.4c71a8c9.js"
   },
-  "/_nuxt/ProseH4.7d25d860.js": {
+  "/_nuxt/ProseH4.cdb325e5.js": {
     "type": "application/javascript",
-    "etag": "\"1a8-/qfySgQKPob+PBBtnrhHY5/5C/o\"",
-    "mtime": "2023-05-16T09:34:09.860Z",
+    "etag": "\"1a8-M77MRK0ATWXSx4/9uVLKZ9e236w\"",
+    "mtime": "2023-05-26T12:43:27.803Z",
     "size": 424,
-    "path": "../public/_nuxt/ProseH4.7d25d860.js"
+    "path": "../public/_nuxt/ProseH4.cdb325e5.js"
   },
-  "/_nuxt/ProseH5.81389607.js": {
+  "/_nuxt/ProseH5.f56859f3.js": {
     "type": "application/javascript",
-    "etag": "\"1a8-C1VqQwl8lSCsOJBqWO+bM5EryXs\"",
-    "mtime": "2023-05-16T09:34:09.859Z",
+    "etag": "\"1a8-rJfGE1JgQswmYAiLwzjzGecEzoc\"",
+    "mtime": "2023-05-26T12:43:27.803Z",
     "size": 424,
-    "path": "../public/_nuxt/ProseH5.81389607.js"
+    "path": "../public/_nuxt/ProseH5.f56859f3.js"
   },
-  "/_nuxt/ProseH6.2ba43427.js": {
+  "/_nuxt/ProseH6.a54d6314.js": {
     "type": "application/javascript",
-    "etag": "\"1a8-RGfa1yoI4jwGPWamAtn3FH+yiJU\"",
-    "mtime": "2023-05-16T09:34:09.859Z",
+    "etag": "\"1a8-OopRaV9mIDXqMnas+vdpoQ2+lAQ\"",
+    "mtime": "2023-05-26T12:43:27.802Z",
     "size": 424,
-    "path": "../public/_nuxt/ProseH6.2ba43427.js"
+    "path": "../public/_nuxt/ProseH6.a54d6314.js"
   },
-  "/_nuxt/ProseHr.241fe99f.js": {
+  "/_nuxt/ProseHr.12f76325.js": {
     "type": "application/javascript",
-    "etag": "\"96-/vcuj4Hw8tIXIXE01mtdecj2zqw\"",
-    "mtime": "2023-05-16T09:34:09.859Z",
+    "etag": "\"96-89PKaR+qD1LQgnEnlos5TtNpyAI\"",
+    "mtime": "2023-05-26T12:43:27.802Z",
     "size": 150,
-    "path": "../public/_nuxt/ProseHr.241fe99f.js"
+    "path": "../public/_nuxt/ProseHr.12f76325.js"
   },
-  "/_nuxt/ProseImg.ff9c0386.js": {
+  "/_nuxt/ProseImg.46a223d7.js": {
     "type": "application/javascript",
-    "etag": "\"21c-RWQxXhMdQEqnpU15fdersmM6xIY\"",
-    "mtime": "2023-05-16T09:34:09.858Z",
+    "etag": "\"21c-4EFMcteHvKMr1aMrkMJewWE1kLw\"",
+    "mtime": "2023-05-26T12:43:27.802Z",
     "size": 540,
-    "path": "../public/_nuxt/ProseImg.ff9c0386.js"
+    "path": "../public/_nuxt/ProseImg.46a223d7.js"
   },
-  "/_nuxt/ProseLi.134b19cf.js": {
+  "/_nuxt/ProseLi.741d225d.js": {
     "type": "application/javascript",
-    "etag": "\"ba-3udYKSTSsWwc9HpG9Aspw5yQP7M\"",
-    "mtime": "2023-05-16T09:34:09.858Z",
+    "etag": "\"ba-ZqrkjcO50heaBviNgrLxynG13m4\"",
+    "mtime": "2023-05-26T12:43:27.802Z",
     "size": 186,
-    "path": "../public/_nuxt/ProseLi.134b19cf.js"
+    "path": "../public/_nuxt/ProseLi.741d225d.js"
   },
-  "/_nuxt/ProseOl.e0f1aa9a.js": {
+  "/_nuxt/ProseOl.8980378e.js": {
     "type": "application/javascript",
-    "etag": "\"ba-frMWquk0pk5PNRfdEEnuZZfBZA0\"",
-    "mtime": "2023-05-16T09:34:09.858Z",
+    "etag": "\"ba-QFqtQB8DEXNOrrJENrBiUOYOQOE\"",
+    "mtime": "2023-05-26T12:43:27.802Z",
     "size": 186,
-    "path": "../public/_nuxt/ProseOl.e0f1aa9a.js"
+    "path": "../public/_nuxt/ProseOl.8980378e.js"
   },
-  "/_nuxt/ProseP.52789d1f.js": {
+  "/_nuxt/ProseP.2a75621d.js": {
     "type": "application/javascript",
-    "etag": "\"b9-SO14yn1DG4tkkJ2hz0ZjFLBJhMc\"",
-    "mtime": "2023-05-16T09:34:09.857Z",
+    "etag": "\"b9-1gk04Su0L1xKubh0i3aEEdxn5WM\"",
+    "mtime": "2023-05-26T12:43:27.802Z",
     "size": 185,
-    "path": "../public/_nuxt/ProseP.52789d1f.js"
+    "path": "../public/_nuxt/ProseP.2a75621d.js"
   },
-  "/_nuxt/ProseStrong.f461d25f.js": {
+  "/_nuxt/ProseStrong.b456e673.js": {
     "type": "application/javascript",
-    "etag": "\"be-L/iPTlnrWCmhtfb8IF51m/NK2e0\"",
-    "mtime": "2023-05-16T09:34:09.857Z",
+    "etag": "\"be-oUWz8gwVn5KcVXh+NEZq8ei9PXY\"",
+    "mtime": "2023-05-26T12:43:27.801Z",
     "size": 190,
-    "path": "../public/_nuxt/ProseStrong.f461d25f.js"
+    "path": "../public/_nuxt/ProseStrong.b456e673.js"
   },
-  "/_nuxt/ProseTable.fe39ed4a.js": {
+  "/_nuxt/ProseTable.2bba9238.js": {
     "type": "application/javascript",
-    "etag": "\"bd-a81+AEPs6dw7x9dQZoYVw1lcOlk\"",
-    "mtime": "2023-05-16T09:34:09.856Z",
+    "etag": "\"bd-4xNy9wzvIC++IA4AcfcoxL8amxQ\"",
+    "mtime": "2023-05-26T12:43:27.801Z",
     "size": 189,
-    "path": "../public/_nuxt/ProseTable.fe39ed4a.js"
+    "path": "../public/_nuxt/ProseTable.2bba9238.js"
   },
-  "/_nuxt/ProseTbody.260b4029.js": {
+  "/_nuxt/ProseTbody.ef8bcce0.js": {
     "type": "application/javascript",
-    "etag": "\"bd-fo4ctHN3hxIt7y4itCuhBWQYNDg\"",
-    "mtime": "2023-05-16T09:34:09.856Z",
+    "etag": "\"bd-vlFzz5D/wo+SIJuTDVTh7DeGKKM\"",
+    "mtime": "2023-05-26T12:43:27.801Z",
     "size": 189,
-    "path": "../public/_nuxt/ProseTbody.260b4029.js"
+    "path": "../public/_nuxt/ProseTbody.ef8bcce0.js"
   },
-  "/_nuxt/ProseTd.c0c07b9f.js": {
+  "/_nuxt/ProseTd.715f5c16.js": {
     "type": "application/javascript",
-    "etag": "\"ba-5ZP+iaCOntt6dt26F9w7Bgu2QHQ\"",
-    "mtime": "2023-05-16T09:34:09.855Z",
+    "etag": "\"ba-kVbRjWx4F/59cJeyRFKCLetwsu8\"",
+    "mtime": "2023-05-26T12:43:27.801Z",
     "size": 186,
-    "path": "../public/_nuxt/ProseTd.c0c07b9f.js"
+    "path": "../public/_nuxt/ProseTd.715f5c16.js"
   },
-  "/_nuxt/ProseTh.57292f24.js": {
+  "/_nuxt/ProseTh.a7576afb.js": {
     "type": "application/javascript",
-    "etag": "\"ba-+GWEn+a7xObnDBhlKoqNzk9ivbw\"",
-    "mtime": "2023-05-16T09:34:09.855Z",
+    "etag": "\"ba-GRLp+i5TsSr5Xl3c3gal9WRCr+U\"",
+    "mtime": "2023-05-26T12:43:27.800Z",
     "size": 186,
-    "path": "../public/_nuxt/ProseTh.57292f24.js"
+    "path": "../public/_nuxt/ProseTh.a7576afb.js"
   },
-  "/_nuxt/ProseThead.734ff953.js": {
+  "/_nuxt/ProseThead.9eefc4fb.js": {
     "type": "application/javascript",
-    "etag": "\"bd-CWl2KwcxpI69NpZjxb/Q3SE0UN4\"",
-    "mtime": "2023-05-16T09:34:09.854Z",
+    "etag": "\"bd-7zMPhohytAqBsBZcC6lTrsOdiII\"",
+    "mtime": "2023-05-26T12:43:27.800Z",
     "size": 189,
-    "path": "../public/_nuxt/ProseThead.734ff953.js"
+    "path": "../public/_nuxt/ProseThead.9eefc4fb.js"
   },
-  "/_nuxt/ProseTr.a01b5f45.js": {
+  "/_nuxt/ProseTr.9003334f.js": {
     "type": "application/javascript",
-    "etag": "\"b5-DmfHZPkG5X5DaSuC0uO1q5gXO14\"",
-    "mtime": "2023-05-16T09:34:09.854Z",
+    "etag": "\"b5-MY2vw46IGrAZD+sWOoG5V2K1L8I\"",
+    "mtime": "2023-05-26T12:43:27.800Z",
     "size": 181,
-    "path": "../public/_nuxt/ProseTr.a01b5f45.js"
+    "path": "../public/_nuxt/ProseTr.9003334f.js"
   },
-  "/_nuxt/ProseUl.faaf473d.js": {
+  "/_nuxt/ProseUl.ae103b3c.js": {
     "type": "application/javascript",
-    "etag": "\"ba-NllAoA/vm4DiOQALmj3JiB8+IKA\"",
-    "mtime": "2023-05-16T09:34:09.854Z",
+    "etag": "\"ba-1lu1gIpLuhdUXXj/EaOTvCw1q90\"",
+    "mtime": "2023-05-26T12:43:27.800Z",
     "size": 186,
-    "path": "../public/_nuxt/ProseUl.faaf473d.js"
+    "path": "../public/_nuxt/ProseUl.ae103b3c.js"
   },
-  "/_nuxt/_...slug_.4ab14add.js": {
+  "/_nuxt/Room.33921af4.js": {
     "type": "application/javascript",
-    "etag": "\"1d7-0se9RIfGlHimDYETEUz7whDU2qA\"",
-    "mtime": "2023-05-16T09:34:09.853Z",
-    "size": 471,
-    "path": "../public/_nuxt/_...slug_.4ab14add.js"
+    "etag": "\"6cf-Fh6zHcfnkFpb0W1KIJKooTo3eZs\"",
+    "mtime": "2023-05-26T12:43:27.800Z",
+    "size": 1743,
+    "path": "../public/_nuxt/Room.33921af4.js"
   },
-  "/_nuxt/_...slug_.a8a80ff0.css": {
+  "/_nuxt/_id_.1fa14859.js": {
+    "type": "application/javascript",
+    "etag": "\"414-P5b2MF9tjmBDSuFlpN/LTjB5D5c\"",
+    "mtime": "2023-05-26T12:43:27.799Z",
+    "size": 1044,
+    "path": "../public/_nuxt/_id_.1fa14859.js"
+  },
+  "/_nuxt/_id_.af6bc359.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"32-vdLGSyK9Qmux/7WyTDEy8ElHUQs\"",
-    "mtime": "2023-05-16T09:34:09.853Z",
-    "size": 50,
-    "path": "../public/_nuxt/_...slug_.a8a80ff0.css"
+    "etag": "\"365-VE3nix6tHOoZ7j2vyOXCxQiLX9Y\"",
+    "mtime": "2023-05-26T12:43:27.799Z",
+    "size": 869,
+    "path": "../public/_nuxt/_id_.af6bc359.css"
   },
-  "/_nuxt/client-db.9d5d21c6.js": {
+  "/_nuxt/_id_.f1325976.js": {
     "type": "application/javascript",
-    "etag": "\"4bd5-fDp9GIUHasY3+Yb8YEbUCpvndo0\"",
-    "mtime": "2023-05-16T09:34:09.853Z",
-    "size": 19413,
-    "path": "../public/_nuxt/client-db.9d5d21c6.js"
+    "etag": "\"a9-+KHgNwiWJiQ9bzmoLoLTZOZMwVc\"",
+    "mtime": "2023-05-26T12:43:27.799Z",
+    "size": 169,
+    "path": "../public/_nuxt/_id_.f1325976.js"
   },
-  "/_nuxt/entry.7b3ba91b.css": {
+  "/_nuxt/client-db.6bb8edfb.js": {
+    "type": "application/javascript",
+    "etag": "\"4c2d-c5pvbgpDCi/t7fANufBo2SXB2HY\"",
+    "mtime": "2023-05-26T12:43:27.798Z",
+    "size": 19501,
+    "path": "../public/_nuxt/client-db.6bb8edfb.js"
+  },
+  "/_nuxt/entry.11304111.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"d3e-nW0+gVYboCAMCldAWfqHFgtzzHY\"",
-    "mtime": "2023-05-16T09:34:09.852Z",
-    "size": 3390,
-    "path": "../public/_nuxt/entry.7b3ba91b.css"
+    "etag": "\"fd0-SxhnJFVCYu/UGB8UOnvIDO6XJQY\"",
+    "mtime": "2023-05-26T12:43:27.798Z",
+    "size": 4048,
+    "path": "../public/_nuxt/entry.11304111.css"
   },
-  "/_nuxt/entry.bca6c365.js": {
+  "/_nuxt/entry.9730d326.js": {
     "type": "application/javascript",
-    "etag": "\"5677c-O31rP6sMUd0siTsBiLX7lwz+lDI\"",
-    "mtime": "2023-05-16T09:34:09.851Z",
-    "size": 354172,
-    "path": "../public/_nuxt/entry.bca6c365.js"
+    "etag": "\"5daf0-n4HVNAQdque0zl4H0O+EPolwpnI\"",
+    "mtime": "2023-05-26T12:43:27.798Z",
+    "size": 383728,
+    "path": "../public/_nuxt/entry.9730d326.js"
   },
   "/_nuxt/error-404.23f2309d.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"e2e-ivsbEmi48+s9HDOqtrSdWFvddYQ\"",
-    "mtime": "2023-05-16T09:34:09.851Z",
+    "mtime": "2023-05-26T12:43:27.797Z",
     "size": 3630,
     "path": "../public/_nuxt/error-404.23f2309d.css"
   },
-  "/_nuxt/error-404.4ccedbbf.js": {
+  "/_nuxt/error-404.27aa9cd5.js": {
     "type": "application/javascript",
-    "etag": "\"8b0-l9zx3VJ1gkuMTcbrZ7ccJh/PFKQ\"",
-    "mtime": "2023-05-16T09:34:09.850Z",
-    "size": 2224,
-    "path": "../public/_nuxt/error-404.4ccedbbf.js"
+    "etag": "\"8a3-OUSaPPyFUd4aUmSUM56ijIS8riI\"",
+    "mtime": "2023-05-26T12:43:27.797Z",
+    "size": 2211,
+    "path": "../public/_nuxt/error-404.27aa9cd5.js"
   },
-  "/_nuxt/error-500.90c4efd7.js": {
+  "/_nuxt/error-500.679e3619.js": {
     "type": "application/javascript",
-    "etag": "\"758-oIx9oN3iiHFOLiMHfhTRAUoTGYs\"",
-    "mtime": "2023-05-16T09:34:09.850Z",
-    "size": 1880,
-    "path": "../public/_nuxt/error-500.90c4efd7.js"
+    "etag": "\"751-aUkBf7l2V72+TVSYssYW29h2soo\"",
+    "mtime": "2023-05-26T12:43:27.797Z",
+    "size": 1873,
+    "path": "../public/_nuxt/error-500.679e3619.js"
   },
   "/_nuxt/error-500.aa16ed4d.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"79e-7j4Tsx89siDo85YoIs0XqsPWmPI\"",
-    "mtime": "2023-05-16T09:34:09.849Z",
+    "mtime": "2023-05-26T12:43:27.796Z",
     "size": 1950,
     "path": "../public/_nuxt/error-500.aa16ed4d.css"
   },
-  "/_nuxt/error-component.1d27b396.js": {
+  "/_nuxt/error-component.62168e58.js": {
     "type": "application/javascript",
-    "etag": "\"45e-l2l+zyuiHrWW+EEAmsfS8NLQ1oU\"",
-    "mtime": "2023-05-16T09:34:09.849Z",
+    "etag": "\"45e-PMnWqt7D9/Z6l4ftsGWBloh8mqY\"",
+    "mtime": "2023-05-26T12:43:27.796Z",
     "size": 1118,
-    "path": "../public/_nuxt/error-component.1d27b396.js"
+    "path": "../public/_nuxt/error-component.62168e58.js"
   },
-  "/_nuxt/index.04b199bd.css": {
+  "/_nuxt/index.4bce49fd.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"5b-ef+IzSvY1GXa9F/E8wDaJQ1TzVE\"",
-    "mtime": "2023-05-16T09:34:09.849Z",
-    "size": 91,
-    "path": "../public/_nuxt/index.04b199bd.css"
-  },
-  "/_nuxt/index.5ed25afe.js": {
-    "type": "application/javascript",
-    "etag": "\"743a-alTdHp5hNUfXhYGtaxsyo+OYyZg\"",
-    "mtime": "2023-05-16T09:34:09.848Z",
-    "size": 29754,
-    "path": "../public/_nuxt/index.5ed25afe.js"
+    "etag": "\"1c6-us46Hj9pylALdFrdAaJOuO9kNW4\"",
+    "mtime": "2023-05-26T12:43:27.796Z",
+    "size": 454,
+    "path": "../public/_nuxt/index.4bce49fd.css"
   },
   "/_nuxt/index.a6ef77ff.js": {
     "type": "application/javascript",
     "etag": "\"26c-+VpW5S3yY9LeN0pZkd2hWLzNeBY\"",
-    "mtime": "2023-05-16T09:34:09.848Z",
+    "mtime": "2023-05-26T12:43:27.795Z",
     "size": 620,
     "path": "../public/_nuxt/index.a6ef77ff.js"
   },
-  "/api/_content/cache.1684229645188.json": {
+  "/_nuxt/index.f51d0605.js": {
+    "type": "application/javascript",
+    "etag": "\"1f2-O5VqC4h5hdxe9AzH0P26eHh7W1I\"",
+    "mtime": "2023-05-26T12:43:27.794Z",
+    "size": 498,
+    "path": "../public/_nuxt/index.f51d0605.js"
+  },
+  "/_nuxt/preview.06b1fc55.js": {
+    "type": "application/javascript",
+    "etag": "\"219-AxRPGooTUdfgohtpiNNhUNbPlOc\"",
+    "mtime": "2023-05-26T12:43:27.794Z",
+    "size": 537,
+    "path": "../public/_nuxt/preview.06b1fc55.js"
+  },
+  "/_nuxt/query.9415944d.js": {
+    "type": "application/javascript",
+    "etag": "\"d5c-hRugIRUpyTls79WsiZvyxlhf5Zg\"",
+    "mtime": "2023-05-26T12:43:27.794Z",
+    "size": 3420,
+    "path": "../public/_nuxt/query.9415944d.js"
+  },
+  "/_nuxt/utils.82138377.js": {
+    "type": "application/javascript",
+    "etag": "\"590-3439FdgLgFp6+jqcHEN9C1FuJ+g\"",
+    "mtime": "2023-05-26T12:43:27.794Z",
+    "size": 1424,
+    "path": "../public/_nuxt/utils.82138377.js"
+  },
+  "/background/background-01.jpeg": {
+    "type": "image/jpeg",
+    "etag": "\"2797f-6Ppkt9TrCzA34sBBcD4+WLRkw9o\"",
+    "mtime": "2023-05-26T12:43:27.965Z",
+    "size": 162175,
+    "path": "../public/background/background-01.jpeg"
+  },
+  "/biomemtics/aerialtronics-altura-clear-flight-solutions-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"768b8-nPDgIw7CPIreDq2FTT+haqUjH5w\"",
+    "mtime": "2023-05-26T12:43:27.962Z",
+    "size": 485560,
+    "path": "../public/biomemtics/aerialtronics-altura-clear-flight-solutions-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/angelaa-knee-prothesis-tu-delft-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"4e3ca-KldhLyq4PT4mlVuaJfRBWLTBWrA\"",
+    "mtime": "2023-05-26T12:43:27.961Z",
+    "size": 320458,
+    "path": "../public/biomemtics/angelaa-knee-prothesis-tu-delft-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/biomemetics.txt": {
+    "type": "text/plain; charset=utf-8",
+    "etag": "\"11c5-VmNrkPHe4hsGuTZ60bf3sTvH7gI\"",
+    "mtime": "2023-05-26T12:43:27.960Z",
+    "size": 4549,
+    "path": "../public/biomemtics/biomemetics.txt"
+  },
+  "/biomemtics/cheetah-fast-running-energy-efficeient-quadruped-university-of-twente-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"67b30-v3zJwQoxmfPbxec/lOZwbdk6oz4\"",
+    "mtime": "2023-05-26T12:43:27.960Z",
+    "size": 424752,
+    "path": "../public/biomemtics/cheetah-fast-running-energy-efficeient-quadruped-university-of-twente-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/del-fly-ma-vlab-delft-university-of-technology-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"83254-Xzn01ZR+zzY3MDqS4cYIsp47K2M\"",
+    "mtime": "2023-05-26T12:43:27.959Z",
+    "size": 537172,
+    "path": "../public/biomemtics/del-fly-ma-vlab-delft-university-of-technology-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/delft-biorobotics-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"3505a-vY2wqKL2DknF1t+2FmxypB80k9Y\"",
+    "mtime": "2023-05-26T12:43:27.958Z",
+    "size": 217178,
+    "path": "../public/biomemtics/delft-biorobotics-lab-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/dual-hemi-continuously-variable-transmission-university-of-twente-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"92a5a-hx39h1tYu4B5FVUDkvDQcRAQqDw\"",
+    "mtime": "2023-05-26T12:43:27.957Z",
+    "size": 600666,
+    "path": "../public/biomemtics/dual-hemi-continuously-variable-transmission-university-of-twente-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/edm-european-space-agency-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"765ba-+CcEGh7EMD4oG45uAwCSW243Y84\"",
+    "mtime": "2023-05-26T12:43:27.955Z",
+    "size": 484794,
+    "path": "../public/biomemtics/edm-european-space-agency-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/flame-robot-delft-biorobotics-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"37b6a-PcyZrnDvt5hDEmMCkDZTeyQ1ITI\"",
+    "mtime": "2023-05-26T12:43:27.953Z",
+    "size": 228202,
+    "path": "../public/biomemtics/flame-robot-delft-biorobotics-lab-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/foot-bot-swarm-swarm-robotics-idsia-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"62e62-MZ3jH3BasmqwOSMd2OFxIov7hgI\"",
+    "mtime": "2023-05-26T12:43:27.952Z",
+    "size": 405090,
+    "path": "../public/biomemtics/foot-bot-swarm-swarm-robotics-idsia-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/interact-centaur-rover-european-space-agency-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"81798-BYrK6/F+3NMRVfXmBCXLLPzaiu0\"",
+    "mtime": "2023-05-26T12:43:27.950Z",
+    "size": 530328,
+    "path": "../public/biomemtics/interact-centaur-rover-european-space-agency-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/lbr-iiwa-robot-kuka-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"44db6-1fkagXEwDei/tLCEuyz637rrloc\"",
+    "mtime": "2023-05-26T12:43:27.948Z",
+    "size": 282038,
+    "path": "../public/biomemtics/lbr-iiwa-robot-kuka-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/mechanical-horse-built-by-george-harold-messmore-circa-1937-musée-mécanique-sf-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"5cbe0-V2giTmgLK6Rqz43FDvN1aJJm/sg\"",
+    "mtime": "2023-05-26T12:43:27.947Z",
+    "size": 379872,
+    "path": "../public/biomemtics/mechanical-horse-built-by-george-harold-messmore-circa-1937-musée-mécanique-sf-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/modular-and-mobile-gripping-system-schunk-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"632f4-haDcrKoZxzF3zFiFFzwhBY9Xf8g\"",
+    "mtime": "2023-05-26T12:43:27.946Z",
+    "size": 406260,
+    "path": "../public/biomemtics/modular-and-mobile-gripping-system-schunk-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/museon-walker-delft-biorobotics-laboratory-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"658ae-SblePrdxDhG0k1JW7qZhd9JDeHM\"",
+    "mtime": "2023-05-26T12:43:27.944Z",
+    "size": 415918,
+    "path": "../public/biomemtics/museon-walker-delft-biorobotics-laboratory-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/paro-eizt-zuyd-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"4d7fc-R+aWNrulvKns8PO/TrBEHNwGc+w\"",
+    "mtime": "2023-05-26T12:43:27.942Z",
+    "size": 317436,
+    "path": "../public/biomemtics/paro-eizt-zuyd-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/phides-biomechanical-engineering-tu-delft-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"31398-rfbVJpSxoPgoWR2pLPFhM4/pYHs\"",
+    "mtime": "2023-05-26T12:43:27.941Z",
+    "size": 201624,
+    "path": "../public/biomemtics/phides-biomechanical-engineering-tu-delft-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/reflex-leg-university-of-twente-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"80160-swVb7wAcPoz/YW7eFPwMgUZNXe0\"",
+    "mtime": "2023-05-26T12:43:27.940Z",
+    "size": 524640,
+    "path": "../public/biomemtics/reflex-leg-university-of-twente-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/robird-jerrie-clear-flight-solutions-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"6db3c-s3MIHyR/a7A3znVzy43pGE0opRA\"",
+    "mtime": "2023-05-26T12:43:27.936Z",
+    "size": 449340,
+    "path": "../public/biomemtics/robird-jerrie-clear-flight-solutions-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/robot-scamp-mark-r-cutkosky-biomimetics-and-dextrous-manipulation-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"4c2aa-BQkb7ueFBBHaNpQyLsIgTIPhqg0\"",
+    "mtime": "2023-05-26T12:43:27.934Z",
+    "size": 311978,
+    "path": "../public/biomemtics/robot-scamp-mark-r-cutkosky-biomimetics-and-dextrous-manipulation-lab-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/sergio-tu-eindhoven-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"6b3a2-vmrOMHZL8Mt7Zzc/qw0Ey9hmlnY\"",
+    "mtime": "2023-05-26T12:43:27.933Z",
+    "size": 439202,
+    "path": "../public/biomemtics/sergio-tu-eindhoven-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/slacklining-robot-tu-delft-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"6db62-NmNEKtAKOIEJRwUmcnK35QN8j9I\"",
+    "mtime": "2023-05-26T12:43:27.932Z",
+    "size": 449378,
+    "path": "../public/biomemtics/slacklining-robot-tu-delft-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/underactuated-hand-prothesis-with-compliant-control-university-of-twente-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"88170-5O5L7In9xQE2Q5wPcqgJP0pRieg\"",
+    "mtime": "2023-05-26T12:43:27.932Z",
+    "size": 557424,
+    "path": "../public/biomemtics/underactuated-hand-prothesis-with-compliant-control-university-of-twente-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/usc-human-centered-robotics-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"3ee36-lC2+tHtJyy/0t5CFTjaXulBKteM\"",
+    "mtime": "2023-05-26T12:43:27.930Z",
+    "size": 257590,
+    "path": "../public/biomemtics/usc-human-centered-robotics-lab-wanda-tuerlinckx.webp"
+  },
+  "/biomemtics/woodenhaptics-ucsd-san-diego-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"21522-hncbzpFQh7y/Bcmiun2nc7ioy6w\"",
+    "mtime": "2023-05-26T12:43:27.930Z",
+    "size": 136482,
+    "path": "../public/biomemtics/woodenhaptics-ucsd-san-diego-wanda-tuerlinckx.webp"
+  },
+  "/spiral/CBN10_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"20fcf2-7cYbc1eXV/xhawCYeQ5LcYRZeks\"",
+    "mtime": "2023-05-26T12:43:27.871Z",
+    "size": 2161906,
+    "path": "../public/spiral/CBN10_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN11_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"2196d0-YL8MD5oYKxRDlsQ0UixLfg4MMSw\"",
+    "mtime": "2023-05-26T12:43:27.867Z",
+    "size": 2201296,
+    "path": "../public/spiral/CBN11_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN1_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"18c19e-V+lJHmP8ixR23XkILFTCB/J7HcI\"",
+    "mtime": "2023-05-26T12:43:27.861Z",
+    "size": 1622430,
+    "path": "../public/spiral/CBN1_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN2_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"1c9456-ZvNbRyjid7eJbn0MGZ7lUG+8hlE\"",
+    "mtime": "2023-05-26T12:43:27.859Z",
+    "size": 1872982,
+    "path": "../public/spiral/CBN2_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN3_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"211bfe-lNApzTi7s0B7QHl4CMwT91u+cVk\"",
+    "mtime": "2023-05-26T12:43:27.856Z",
+    "size": 2169854,
+    "path": "../public/spiral/CBN3_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN4_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"1cdeea-2M9pit4kFEPOqobmEqIVEh5iJlc\"",
+    "mtime": "2023-05-26T12:43:27.850Z",
+    "size": 1892074,
+    "path": "../public/spiral/CBN4_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN5_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"246152-LaV3u//IyasgHvrxiLPAUu2PAOo\"",
+    "mtime": "2023-05-26T12:43:27.844Z",
+    "size": 2384210,
+    "path": "../public/spiral/CBN5_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN6_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"1bdbe4-JA4npPVXnAN0LKiZ4gqc3b987+Y\"",
+    "mtime": "2023-05-26T12:43:27.837Z",
+    "size": 1825764,
+    "path": "../public/spiral/CBN6_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN7_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"19aec0-ifjDNQk7Cu0k1PRUkp2+tY0XbsQ\"",
+    "mtime": "2023-05-26T12:43:27.832Z",
+    "size": 1683136,
+    "path": "../public/spiral/CBN7_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN8_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"1d462e-WYO68fT2PhwtFXr2hIYnHKMP+t0\"",
+    "mtime": "2023-05-26T12:43:27.827Z",
+    "size": 1918510,
+    "path": "../public/spiral/CBN8_WandaTuerlinckx kopiëren.webp"
+  },
+  "/spiral/CBN9_WandaTuerlinckx kopiëren.webp": {
+    "type": "image/webp",
+    "etag": "\"201762-I/nX1zPhPn5DtN8l05Ewf6i5Upo\"",
+    "mtime": "2023-05-26T12:43:27.823Z",
+    "size": 2103138,
+    "path": "../public/spiral/CBN9_WandaTuerlinckx kopiëren.webp"
+  },
+  "/humanoids/amigo-tu-eindhoven-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"63446-CDy8GPGFDyk/5nFKZoMI1ausbcE\"",
+    "mtime": "2023-05-26T12:43:27.927Z",
+    "size": 406598,
+    "path": "../public/humanoids/amigo-tu-eindhoven-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/azimo-honda-aoyama-building-tokyo-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"6f660-XS2+611dlyWQDrcnTWu6gLAZGOA\"",
+    "mtime": "2023-05-26T12:43:27.926Z",
+    "size": 456288,
+    "path": "../public/humanoids/azimo-honda-aoyama-building-tokyo-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/bandit-ii-usc-human-centered-robotics-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"56dae-koE6HQU2HShM8YRbkBkE2FcEDE8\"",
+    "mtime": "2023-05-26T12:43:27.924Z",
+    "size": 355758,
+    "path": "../public/humanoids/bandit-ii-usc-human-centered-robotics-lab-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/cb-2-asada-research-group-osaka-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"8110c-KhoGxEEe3+daH9XoqfENMJgDuy0\"",
+    "mtime": "2023-05-26T12:43:27.920Z",
+    "size": 528652,
+    "path": "../public/humanoids/cb-2-asada-research-group-osaka-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/comm-u-ishiguro-lab-osaka-university-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"639dc-FpZKi0vAR253thGYwV8Xulpauc4\"",
+    "mtime": "2023-05-26T12:43:27.919Z",
+    "size": 408028,
+    "path": "../public/humanoids/comm-u-ishiguro-lab-osaka-university-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/fetch-institute-of-contextual-robotics-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"39e92-4VAGLJoOPFMmqVYxcRZq1c3vhMs\"",
+    "mtime": "2023-05-26T12:43:27.918Z",
+    "size": 237202,
+    "path": "../public/humanoids/fetch-institute-of-contextual-robotics-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/hermes-usc-human-centered-robotics-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"64944-8hd5CJWa+iyeuDSo7i8eAFrvEZI\"",
+    "mtime": "2023-05-26T12:43:27.918Z",
+    "size": 411972,
+    "path": "../public/humanoids/hermes-usc-human-centered-robotics-lab-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/hermes-usc-la-wanda-tuerlinck.webp": {
+    "type": "image/webp",
+    "etag": "\"7987c-X5fs62lzs7+skotO12W7o/0NkS8\"",
+    "mtime": "2023-05-26T12:43:27.917Z",
+    "size": 497788,
+    "path": "../public/humanoids/hermes-usc-la-wanda-tuerlinck.webp"
+  },
+  "/humanoids/i-cub-asada-research-group-in-osaka-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"7375e-WwCKdqLQ3U0urnpJ/5UfJt05P8o\"",
+    "mtime": "2023-05-26T12:43:27.916Z",
+    "size": 472926,
+    "path": "../public/humanoids/i-cub-asada-research-group-in-osaka-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/in-moov-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"613a4-GwzJ/AcZOddul5J+f3hyEd91tcg\"",
+    "mtime": "2023-05-26T12:43:27.915Z",
+    "size": 398244,
+    "path": "../public/humanoids/in-moov-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/kaspar-eizt-zuyd-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"63330-635OEr+ha92mzdoH19XnPoKXJ10\"",
+    "mtime": "2023-05-26T12:43:27.913Z",
+    "size": 406320,
+    "path": "../public/humanoids/kaspar-eizt-zuyd-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/kobian-r-1-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx-close-up.webp": {
+    "type": "image/webp",
+    "etag": "\"7e6b2-gPe88FvV9HeF8mXoG5Ks/GpwExk\"",
+    "mtime": "2023-05-26T12:43:27.909Z",
+    "size": 517810,
+    "path": "../public/humanoids/kobian-r-1-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx-close-up.webp"
+  },
+  "/humanoids/kobian-r-1-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"73048-Dyuvl1udH/DV/GFRD0b9XTAWCbQ\"",
+    "mtime": "2023-05-26T12:43:27.908Z",
+    "size": 471112,
+    "path": "../public/humanoids/kobian-r-1-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/nao-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"73418-NVfjyWCg/kLnPDLJ9bBGYJgncnY\"",
+    "mtime": "2023-05-26T12:43:27.907Z",
+    "size": 472088,
+    "path": "../public/humanoids/nao-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/open-source-3-d-printed-life-size-robot-in-moove-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"72342-T9RkZZyNKI1Y8aaioXNxgluh3hY\"",
+    "mtime": "2023-05-26T12:43:27.906Z",
+    "size": 467778,
+    "path": "../public/humanoids/open-source-3-d-printed-life-size-robot-in-moove-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/pepper-soft-bank-robotics-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"70730-OKzUgwApG7Or+Il+gY8jTQAbe7w\"",
+    "mtime": "2023-05-26T12:43:27.905Z",
+    "size": 460592,
+    "path": "../public/humanoids/pepper-soft-bank-robotics-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/reem-c-pal-robotics-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"58238-/oO4j+5sxKknalbVMxJC06HNavA\"",
+    "mtime": "2023-05-26T12:43:27.902Z",
+    "size": 361016,
+    "path": "../public/humanoids/reem-c-pal-robotics-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/robby-delft-university-of-technology-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"60a10-z2hNZJIaqONH9zOSP5NW62VA+d8\"",
+    "mtime": "2023-05-26T12:43:27.901Z",
+    "size": 395792,
+    "path": "../public/humanoids/robby-delft-university-of-technology-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/robo-the-spian-engineered-arts-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"5ab26-KbF0a8OeprGBdoYu2o3mfM1uDqk\"",
+    "mtime": "2023-05-26T12:43:27.901Z",
+    "size": 371494,
+    "path": "../public/humanoids/robo-the-spian-engineered-arts-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/rubi-4-machine-perception-lab-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"4dfa6-jjygKIJrg41fMhGkTmtWu3+eXLE\"",
+    "mtime": "2023-05-26T12:43:27.900Z",
+    "size": 319398,
+    "path": "../public/humanoids/rubi-4-machine-perception-lab-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/rubi-project-machine-perception-lab-ucsd-san-diego-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"72e20-BWctnCE/+cjtpyrjjFNSvrp8Jlc\"",
+    "mtime": "2023-05-26T12:43:27.899Z",
+    "size": 470560,
+    "path": "../public/humanoids/rubi-project-machine-perception-lab-ucsd-san-diego-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/tia-go-m-obile-manipulator-pal-robotics-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"5722c-W4Bpp42Ryfud/3QNamyqZ5y6YI0\"",
+    "mtime": "2023-05-26T12:43:27.898Z",
+    "size": 356908,
+    "path": "../public/humanoids/tia-go-m-obile-manipulator-pal-robotics-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/wabian-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx-close-up.webp": {
+    "type": "image/webp",
+    "etag": "\"5b69e-3yoRQtqj6+iFrDghZZeoeJV81tg\"",
+    "mtime": "2023-05-26T12:43:27.897Z",
+    "size": 374430,
+    "path": "../public/humanoids/wabian-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx-close-up.webp"
+  },
+  "/humanoids/wabian-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"7088c-Wbb83pvkMbYtP4DhFyPd+uprS5A\"",
+    "mtime": "2023-05-26T12:43:27.896Z",
+    "size": 460940,
+    "path": "../public/humanoids/wabian-takanishi-laboratory-of-waseda-university-tokyo-wanda-tuerlinckx.webp"
+  },
+  "/humanoids/wabot-2-waseda-university-tokyo-wanda-tuerlinckx.webp": {
+    "type": "image/webp",
+    "etag": "\"79078-33rSnO6D/G8uoOicm7SJqiqIWoM\"",
+    "mtime": "2023-05-26T12:43:27.895Z",
+    "size": 495736,
+    "path": "../public/humanoids/wabot-2-waseda-university-tokyo-wanda-tuerlinckx.webp"
+  },
+  "/api/_content/cache.1685105003446.json": {
     "type": "application/json",
-    "etag": "\"a30-iVPGlRQ/tw90g3yH7QrUNgORVVk\"",
-    "mtime": "2023-05-16T09:34:12.120Z",
+    "etag": "\"a30-3X40p3V3GSe36WFoNo9medl+DxE\"",
+    "mtime": "2023-05-26T12:43:30.191Z",
     "size": 2608,
-    "path": "../public/api/_content/cache.1684229645188.json"
+    "path": "../public/api/_content/cache.1685105003446.json"
   }
 };
 
@@ -4349,7 +5126,7 @@ const _yr1PZg = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_gxVN2y = () => import('../handlers/renderer.mjs');
+const _lazy_gxVN2y = () => import('../handlers/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
@@ -4357,7 +5134,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _LYH7LY, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _LYH7LY, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _LYH7LY, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1684229645188.json', handler: _A0ClnE, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1685105003446.json', handler: _A0ClnE, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _yr1PZg, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _yr1PZg, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _yr1PZg, lazy: false, middleware: false, method: "get" },

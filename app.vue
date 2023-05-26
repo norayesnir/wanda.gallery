@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div id="app">
     <NavigationMenu />
     <div class="page-content">
       <NuxtPage />
@@ -7,18 +7,19 @@
   </div>
 </template>
 
-<!-- <script>
-export default {
-  mounted() {
-    const script = document.createElement('script')
-    script.src = 'https://aframe.io/releases/1.2.0/aframe.min.js'
-    document.head.appendChild(script)
-  },
-}
-</script> -->
-
 <style scoped lang="scss">
-p{
-  margin-top: 100px;
+#app{
+  position: relative;
+
+  .navigation-menu{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+  }
+
+  .page-content{
+    padding-top: 96px;
+  }
 }
 </style>
+

@@ -68,6 +68,9 @@
       "#apollo": [
         ".nuxt/apollo"
       ],
+      "#vue-router": [
+        ".nuxt/vue-router"
+      ],
       "#imports": [
         ".nuxt/imports"
       ],

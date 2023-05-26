@@ -3,7 +3,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  overflow-y: scroll;
+}
+
+body{
+  background: #BCC6CC;
+  background: linear-gradient(to bottom, #BCC6CC, #EEEEEE, #BCC6CC);
 }
 
 img{

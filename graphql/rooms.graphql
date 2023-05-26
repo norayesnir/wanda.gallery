@@ -1,7 +1,0 @@
-query getArtworks($limit: Int!) {
-  artworks {
-    id
-    title
-    url
-  }
-}
