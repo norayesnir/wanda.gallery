@@ -33,12 +33,12 @@ const query = gql`
   }
 `;
 
-const { data, error, refresh } = useAsyncQuery<RoomData>(query, { categoryId })
+const { data } = useAsyncQuery<RoomData>(query, { categoryId })
 </script>
 
 <template>
   <div>
-    <div 
+    <div
       class="room-selection"
       v-if="data && data.rooms && data.rooms.data"
     >
