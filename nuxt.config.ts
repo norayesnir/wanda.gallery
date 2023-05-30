@@ -15,7 +15,6 @@ export default defineNuxtConfig({
 
   modules: [
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
-    "@nuxt/content",
     "nuxt-icon",
     '@nuxtjs/device',
     '@nuxtjs/apollo',
