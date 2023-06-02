@@ -1,4 +1,17 @@
 <script setup lang="ts">
+  interface Category {
+    id: number;
+    title: string;
+    intro: string;
+    cover_url: string;
+  }
+
+  interface CategoryData {
+    categories: {
+      data: Category[];
+    }
+  }
+
   const query = gql`
   query {
     categories {
@@ -12,7 +25,7 @@
   }
 `;
 
-const { data, error, refresh } = useAsyncQuery(query);
+const { data, error, refresh } = useAsyncQuery<CategoryData>(query);
 </script>
 
 <template>

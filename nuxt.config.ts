@@ -30,6 +30,9 @@ export default defineNuxtConfig({
         httpEndpoint: 'https://admin.wanda.gallery/graphql'
       }
     },
+    clientConfigs: {
+      default: '~/apollo.ts',
+    },
   },
 
   components: {

@@ -6,12 +6,6 @@ export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerS
 export { default as useDeviceD } from '../node_modules/@nuxtjs/device/dist/runtime/composables/useDevice.d';
 export { default as useDevice } from '../node_modules/@nuxtjs/device/dist/runtime/composables/useDevice';
 export { usePinia, defineStore } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
-export { queryContent } from '../node_modules/@nuxt/content/dist/runtime/composables/query';
-export { useContentHelpers } from '../node_modules/@nuxt/content/dist/runtime/composables/helpers';
-export { useContentHead } from '../node_modules/@nuxt/content/dist/runtime/composables/head';
-export { useContentPreview } from '../node_modules/@nuxt/content/dist/runtime/composables/preview';
-export { withContentBase, useUnwrap, useContentDisabled as useContentState, useContentDisabled as useContent } from '../node_modules/@nuxt/content/dist/runtime/composables/utils';
-export { fetchContentNavigation } from '../node_modules/@nuxt/content/dist/runtime/composables/navigation';
 export { gql } from 'graphql-tag';
 export { useApollo, useAsyncQuery, useLazyAsyncQuery } from '../node_modules/@nuxtjs/apollo/dist/runtime/composables';
 export { useQuery, useLazyQuery, useMutation, useSubscription, useApolloClient, useQueryLoading, useMutationLoading, useSubscriptionLoading, useGlobalQueryLoading, useGlobalMutationLoading, useGlobalSubscriptionLoading } from '@vue/apollo-composable';

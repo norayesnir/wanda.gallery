@@ -1,5 +1,23 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { gql } from '@apollo/client/core';
+
+let roomId: number | undefined;
+
+interface Artwork {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  url: string;
+  room_id: number;
+}
+
+interface ArtworkData {
+  artworks: {
+    data: Artwork[];
+  };
+}
 
 const query = gql`
   query {
@@ -16,7 +34,7 @@ const query = gql`
   }
 `;
 
-const { data, error, refresh } = useAsyncQuery(query);
+const { data, refresh } = useAsyncQuery<ArtworkData>(query, { roomId });
 
 const numEntities = 10;
 const radius = 20;
@@ -63,18 +81,20 @@ const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
 
 <template>
   <a-scene 
+    v-if="data && data.artworks && data.artworks.data"
     loading-screen="backgroundColor: black; dotsColor: white;"
     vr-mode-ui="enabled: false"
   >
   
-    <a-assets>
+    <!-- <a-assets>
       <img
-        v-for="(artwork, index) in data.artworks.data"
-        :id="kebabCase(artwork.title)"
+        v-for="artwork in data.artworks.data"
+        :id="artwork.id"
         :src="artwork.url"
+        :alt="kebabCase(artwork.title)"
         crossorigin="anonymous"
       >
-    </a-assets>
+    </a-assets> -->
 
     <!-- Scene -->
     <a-entity id="mario">
@@ -86,19 +106,10 @@ const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
       >
 
         <a-image 
-          src="androids/adran-engineered-arts-uk-wanda-tuerlinckx.webp"
-          :alt="kebabCase(artwork.title)"
-          :id="kebabCase(artwork.title)"
+          :id="artwork.id"
           width="1.6" 
           height="2"
         ></a-image>
-
-        <!-- <a-entity
-          geometry="primitive: plane; height: 2; width: 1.6;"
-          :material="'src: #' + entities[index].text"
-          :src="artwork.url"
-          mixin="poster"
-        ></a-entity> -->
 
         <a-text 
           class="title"

@@ -1,12 +1,46 @@
+<script setup lang="ts">
+import { gql } from '@apollo/client/core';
+import { useNavigationMenuStore } from "~/store/navigationMenuStore";
+
+const navigation = useNavigationMenuStore();
+
+interface Category {
+  id: number;
+  title: string;
+}
+
+interface CategoryData {
+  categories: {
+    data: Category[];
+  }
+}
+
+const query = gql`
+  query {
+    categories {
+      data {
+        id
+        title
+      }
+    }
+  }
+`;
+
+const { data, refresh } = useAsyncQuery<CategoryData>(query);
+</script>
+
 <template>
-  <ul class="routes">
+  <ul 
+    class="routes"
+    v-if="data && data.categories.data && data.categories.data"
+  >
     <h6>Projects</h6>
     <RouterLink
       @click="navigation.navigationState === false"
       v-for="category in data.categories.data"
       class="route"
       :key="category.id"
-      :to="`project/${category.id}`"
+      :to="`/project/${category.id}`"
     >
       {{ category.title }}
     </RouterLink>
@@ -35,25 +69,6 @@
   </ul>
 </template>
 
-<script setup lang="ts">
-import { useNavigationMenuStore } from "~/store/navigationMenuStore"
-
-const query = gql`
-  query {
-    categories {
-      data {
-        id
-        title
-      }
-    }
-  }
-`;
-
-const { data, error, refresh } = useAsyncQuery(query);
-
-const navigation = useNavigationMenuStore();
-</script>
-
 <style scoped lang="scss">
 .routes{
   display: flex;
@@ -65,9 +80,10 @@ const navigation = useNavigationMenuStore();
     padding: 0px 10px;
     font-size: 16px;
     text-transform: capitalize;
+    opacity: .9;
 
     &:hover{
-      opacity: .8;
+      opacity: .7;
       color: var(--primary);
     }
   }
@@ -80,11 +96,7 @@ const navigation = useNavigationMenuStore();
 }
 
 .router-link-active{
-  color: var(--primary);
-  background: -webkit-linear-gradient(45deg, var(--primary), var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 
 @media screen and (max-width: 550px) {

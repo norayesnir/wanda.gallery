@@ -7,6 +7,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  watch: {
+    $route(to, from) {
+      // Check if the route has changed
+      if (to.path !== from.path) {
+        // Reload the page
+        location.reload();
+      }
+    },
+  },
+};
+</script>
+
 <style scoped lang="scss">
 #app{
   position: relative;

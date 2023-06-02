@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
+import { gql } from '@apollo/client/core';
+
 const route = useRoute();
 let categoryId: number | undefined;
 
@@ -15,9 +18,17 @@ interface Room {
   cover_url: string;
 }
 
+interface Categories {
+  title: string;
+}
+
 interface RoomData {
-rooms: RoomData;
-  data: Room[];
+  rooms: {
+    data: Room[];
+  };
+  categories: {
+    data: Categories [];
+  };
 }
 
 const query = gql`
@@ -30,10 +41,14 @@ const query = gql`
         cover_url
       }
     }
+    categories {
+      data {
+        title
+      }
+    }
   }
 `;
-
-const { data } = useAsyncQuery<RoomData>(query, { categoryId })
+const { data, refresh } = useAsyncQuery<RoomData>(query, { categoryId });
 </script>
 
 <template>
@@ -110,7 +125,7 @@ const { data } = useAsyncQuery<RoomData>(query, { categoryId })
         }
 
         p{
-          font-size: 24px;
+          font-size: 16px;
           margin: 0;
         }
       }
