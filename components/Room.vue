@@ -86,7 +86,7 @@ const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
     vr-mode-ui="enabled: false"
   >
   
-    <!-- <a-assets>
+    <a-assets>
       <img
         v-for="artwork in data.artworks.data"
         :id="artwork.id"
@@ -94,7 +94,7 @@ const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
         :alt="kebabCase(artwork.title)"
         crossorigin="anonymous"
       >
-    </a-assets> -->
+    </a-assets>
 
     <!-- Scene -->
     <a-entity id="mario">
