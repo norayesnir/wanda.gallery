@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="flex">
-      <section class="section-one">
+      <!-- <section class="section-one">
         <HomepageHero />
       </section>
       <section class="section-two">
         <HomepageCategorySelection/>
-      </section>
+      </section> -->
+      <Room />
     </div>
     <AppFooter />
   </div>

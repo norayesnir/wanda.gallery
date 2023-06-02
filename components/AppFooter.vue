@@ -37,6 +37,7 @@
 
 <style scoped lang="scss">
 .footer{
+  margin: 0 0 auto 0;
   padding: 32px 48px;
   display: flex;
   flex-direction: column-reverse;

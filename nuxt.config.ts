@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: 'https://admin.wanda.gallery/graphql'
+        httpEndpoint: '/'
       }
     },
     clientConfigs: {

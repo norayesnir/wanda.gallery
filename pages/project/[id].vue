@@ -52,7 +52,7 @@ const { data, refresh } = useAsyncQuery<RoomData>(query, { categoryId });
 </script>
 
 <template>
-  <div>
+  <div class="page">
     <div
       class="room-selection"
       v-if="data && data.rooms && data.rooms.data"
@@ -73,10 +73,14 @@ const { data, refresh } = useAsyncQuery<RoomData>(query, { categoryId });
         </div>
       </div>
     </div>
+    <AppFooter />
   </div>
 </template>
 
 <style scoped lang="scss">
+.page{
+  min-height: 100vh;
+}
 .room-selection{
   width: 100%;
   display: flex;
