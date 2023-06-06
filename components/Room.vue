@@ -1,8 +1,16 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
 import { ref } from 'vue';
 import { gql } from '@apollo/client/core';
 
+const route = useRoute();
 let roomId: number | undefined;
+
+if (Array.isArray(route.params.id)) {
+  roomId = parseInt(route.params.id[0]);
+} else {
+  roomId = parseInt(route.params.id);
+}
 
 interface Artwork {
   id: number;
@@ -13,15 +21,21 @@ interface Artwork {
   room_id: number;
 }
 
-interface ArtworkData {
+interface Room {
+  color: string;
+  background_url: string;
+}
+
+interface CollectedData {
   artworks: {
     data: Artwork[];
-  };
+  },
+  room: Room;
 }
 
 const query = gql`
-  query {
-    artworks(per_page: 10, page: 1) {
+  query($roomId: Int!) {
+    artworks(room_id: $roomId, per_page: 10) {
       data {
         id
         title
@@ -30,15 +44,19 @@ const query = gql`
         url
         room_id
       }
+    },
+    room (id: $roomId) {
+      color
+      background_url
     }
   }
 `;
 
-const { data, refresh } = useAsyncQuery<ArtworkData>(query, { roomId });
+const { data, refresh } = useAsyncQuery<CollectedData>(query, { roomId });
 
 const numEntities = 10;
 const radius = 20;
-const circleCenterPosition = { x: 0, y: 2, z: 0 };
+const circleCenterPosition = { x: 0, y: 0, z: 0 };
 const entities = ref<Entity[]>([]);
 
 interface Entity {
@@ -72,57 +90,69 @@ const positionEntitiesInCircle = () => {
 positionEntitiesInCircle();
 
 // Convert to kebab-case
-const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .join('-')
-    .toLowerCase();
+// const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
+//     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+//     .join('-')
+//     .toLowerCase();
 </script>
-
 
 <template>
   <a-scene 
-    v-if="data && data.artworks && data.artworks.data"
+    class="a-scene"
     loading-screen="backgroundColor: black; dotsColor: white;"
+    :background="`color: ${data.room.color}`"
     vr-mode-ui="enabled: false"
+    v-if="data && data.artworks && data.artworks.data"
   >
+
+    <a-sky :src="data.room.background_url"></a-sky>
   
     <a-assets>
       <img
-        v-for="artwork in data.artworks.data"
-        :id="artwork.id"
+        v-for="(artwork, id) in data.artworks.data" :key="id"
         :src="artwork.url"
-        :alt="kebabCase(artwork.title)"
         crossorigin="anonymous"
       >
     </a-assets>
 
-    <!-- Scene -->
     <a-entity id="mario">
+
       <a-entity
         v-for="(artwork, index) in data.artworks.data" 
         :key="artwork.id" 
         :position="entities[index].position" 
         :rotation="entities[index].rotation"
       >
+        <a-box
+          geometry="primitive: box" 
+          material="color: black"
+          position="0 4 -0.26"
+          depth="0.5"
+          width="7"
+          height="12"
+        >
 
+        </a-box>
         <a-image 
           :id="artwork.id"
-          width="1.6" 
-          height="2"
+          :src="artwork.url"
+          width="6.4" 
+          height="8"
+          position="0 5.5 0"
         ></a-image>
 
         <a-text 
           class="title"
           width="7"
           baseline="bottom"
-          position="1 .7 0"
+          position="-2.9 .7 0"
           :value="artwork.title"
         ></a-text>
         <a-text 
           class="description"
           baseline="top"
-          position="1 .5 0"
-          :value="`${artwork.description}`"
+          position="-2.9 .5 0"
+          :value="artwork.description"
         ></a-text>
       </a-entity>
     </a-entity>

@@ -120,13 +120,11 @@ export default {
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
-  -webkit-tap-highlight-color:rgba(0,0,0,0);
-
 
   .up, .left, .down, .right{
     width: 45px;
     height: 45px;
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--background);
     border-radius: 7px;
 
     // Flex
@@ -134,11 +132,7 @@ export default {
     align-items: center;
     justify-content: center;
 
-    // Background
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    background-color: #00000000;
 
     .arrow{
       width: 15px;

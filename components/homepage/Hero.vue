@@ -3,8 +3,8 @@
     <div class="content">
       <h1>Wanda Tuerlinckx Gallery</h1>
       <div class="buttons">
-        <TemplateButton to="/" color="primary" name="Zie mijn werk" />
-        <TemplateButton to="/" color="secondary" name="Over Mij" />
+        <TemplateButton to="/" color="primary" name="See my work" />
+        <TemplateButton to="/" color="secondary" name="About me" />
       </div>
     </div>
     <img class="image" src="/erica-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp" alt="erica-hiroshi-ishiguro-laboratories-kyoto-japan">

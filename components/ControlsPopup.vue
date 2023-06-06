@@ -1,4 +1,5 @@
 <template>
+<div>
   <div 
     v-if="isDesktop"
     :class="{ closed : controls.controlsPopupVisible}"
@@ -12,6 +13,7 @@
           <Icon 
             name="carbon:chart-3d" 
             size="32"
+            class="icon"
           />
           <h3>Controls</h3>
         </div>
@@ -37,19 +39,15 @@
   >
       <Controls />
   </div>
+</div>
 </template>
 
 <script setup lang="ts">
   import { storeToRefs } from "pinia"
-  import { useNavigationMenuStore } from "~/store/navigationMenuStore"
   import { useControlsStore } from "~/store/controlsStore";
 
-  const menu = useNavigationMenuStore();
   const controls = useControlsStore();
-
-  const { hamburgerMenuToggled } = storeToRefs(menu);
   const { controlsPopupVisible } = storeToRefs(controls);
-
 
   const { isDesktop } = useDevice();
 
@@ -60,7 +58,7 @@
 
 <style scoped lang="scss">
 .controls-popup{
-  z-index: 100;
+  z-index: 101;
   position: fixed;
   left: 16px;
   bottom: 16px;;
@@ -70,16 +68,13 @@
   max-width: 500px;
   
   padding: 16px;
-  border: 1px solid var(--foreground);
+  border: 1px solid var(--background);
   border-radius: 15px;
 
   display: flex;
 
   // Background
   background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
 
   .card-content{
     width: 100%;
@@ -90,15 +85,17 @@
 
       .title{
         display: flex;
+        color: var(--background);
         gap: 10px;
       }
 
       .close{
         padding: 4px;
         border-radius: 50%;
+        color: var(--background);
 
         &:hover{
-          background-color: #363636;
+          background-color: #ffffff40;
         }
       }
     }
@@ -109,6 +106,7 @@
       max-width: calc(500px - 32px);
 
       .card-paragraph{
+        color: var(--background);
         display: flex;
         align-items: center;
         flex: 1;
