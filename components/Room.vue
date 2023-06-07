@@ -59,7 +59,7 @@ const query = gql`
 const { data, refresh } = useAsyncQuery<CollectedData>(query, { roomId });
 
 const numEntities = 10;
-const radius = 20;
+const radius = 30;
 const circleCenterPosition = { x: 0, y: 0, z: 0 };
 const entities = ref<Entity[]>([]);
 
@@ -157,7 +157,7 @@ positionEntitiesInCircle();
           :value="artwork.description"
         ></a-text>
         <a-entity 
-          :sound="`src: url(${data.artwork.sound}); autoplay: true;`" 
+          :sound="`src: url(${artwork.sound}); autoplay: true;`" 
           id="ambient-artwork-sound"
         ></a-entity>
       </a-entity>

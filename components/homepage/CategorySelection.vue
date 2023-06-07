@@ -92,7 +92,6 @@ h1{
     .category{
       position: relative;
       flex-direction: row;
-      max-width: 40%;
       .content{
         text-align: left;
         gap: 16px;
