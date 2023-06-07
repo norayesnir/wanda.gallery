@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'uft-8',
       viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+      title: 'Wanda Gallery',
       script: [
         {
           src: 'https://aframe.io/releases/1.2.0/aframe.min.js',
