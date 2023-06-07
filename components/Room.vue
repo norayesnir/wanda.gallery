@@ -19,11 +19,13 @@ interface Artwork {
   date: string;
   url: string;
   room_id: number;
+  sound: string;
 }
 
 interface Room {
   color: string;
   background_url: string;
+  sound: string;
 }
 
 interface CollectedData {
@@ -43,11 +45,13 @@ const query = gql`
         date
         url
         room_id
+        sound
       }
     },
     room (id: $roomId) {
       color
       background_url
+      sound
     }
   }
 `;
@@ -88,12 +92,6 @@ const positionEntitiesInCircle = () => {
 };
 
 positionEntitiesInCircle();
-
-// Convert to kebab-case
-// const kebabCase = (str: { match: (arg0: RegExp) => any[]; }) => str
-//     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-//     .join('-')
-//     .toLowerCase();
 </script>
 
 <template>
@@ -105,6 +103,10 @@ positionEntitiesInCircle();
     v-if="data && data.artworks && data.artworks.data"
   >
 
+    <a-entity 
+      :sound="`src: url(${data.room.sound}); autoplay: true;`" 
+      id="ambient-room-sound"
+    ></a-entity>
     <a-sky :src="data.room.background_url"></a-sky>
   
     <a-assets>
@@ -154,6 +156,10 @@ positionEntitiesInCircle();
           position="-2.9 .5 0"
           :value="artwork.description"
         ></a-text>
+        <a-entity 
+          :sound="`src: url(${data.artwork.sound}); autoplay: true;`" 
+          id="ambient-artwork-sound"
+        ></a-entity>
       </a-entity>
     </a-entity>
   </a-scene>
