@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="to"
+    :href="to"
     class="border-gradient button"
   >
     {{ $props.name }}
@@ -15,7 +15,7 @@ defineProps({
   },
   to: {
     type: String,
-    default: "/"
+    required: true,
   }
 })
 </script>

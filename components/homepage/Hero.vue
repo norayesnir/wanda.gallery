@@ -3,9 +3,6 @@
     <div class="content">
       <h1>Wanda Tuerlinckx Gallery</h1>
       <p>Wanda Tuerlinckx, originally from Belgium, is a fine art photographer, living and working in Amsterdam. Her photos are part of the collections of the Rijksmuseum Amsterdam and the Amsterdam City Archives.</p>
-      <div class="buttons">
-        <TemplateButton to="https://wandatuerlinckx.com/about/" name="More About Me"/>
-      </div>
     </div>
     <img class="image" src="/hero-image.webp" alt="hero-image">
   </div>
@@ -72,7 +69,7 @@
       }
 
       .image{
-        max-width: 1000px;
+        max-width: 550px;
       }
     }
   }

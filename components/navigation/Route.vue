@@ -59,13 +59,6 @@ const { data, refresh } = useAsyncQuery<CategoryData>(query);
     >
       About
     </NuxtLink>
-    <NuxtLink
-      @click="navigation.navigationState === false"
-      class="route"
-      href="https://wandatuerlinckx.com/about/"
-    >
-      Contact
-    </NuxtLink>
   </ul>
 </template>
 
