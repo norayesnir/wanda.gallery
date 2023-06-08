@@ -9,3 +9,4 @@
 ## Nice to have
 
 - Artwork ambient sound.
+- Hero Update (Room Preview)
