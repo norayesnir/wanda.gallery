@@ -144,15 +144,16 @@ positionEntitiesInCircle();
 
           <a-text 
             class="title"
-            width="7"
+            width="6.7"
             baseline="bottom"
-            position="-2.9 .7 0"
+            position="-3.25 .7 0"
             :value="artwork.title"
           ></a-text>
           <a-text 
             class="description"
             baseline="top"
-            position="-2.9 .5 0"
+            width="6.7"
+            position="-3.25 .5 0"
             :value="artwork.description"
           ></a-text>
         </a-entity>

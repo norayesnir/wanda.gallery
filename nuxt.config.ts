@@ -10,6 +10,11 @@ export default defineNuxtConfig({
           src: 'https://aframe.io/releases/1.2.0/aframe.min.js',
         },
         {
+          src: 'https://tools.luckyorange.com/core/lo.js?site-id=29395730',
+          async: true,
+          defer: true,
+        },
+        {
           src: 'https://www.googletagmanager.com/gtag/js?id=G-FE9JGB36JR',
           async: true,
         },
