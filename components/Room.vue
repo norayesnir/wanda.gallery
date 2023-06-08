@@ -95,72 +95,74 @@ positionEntitiesInCircle();
 </script>
 
 <template>
-  <a-scene 
-    class="a-scene"
-    loading-screen="backgroundColor: black; dotsColor: white;"
-    :background="`color: ${data.room.color}`"
-    vr-mode-ui="enabled: false"
-    v-if="data && data.artworks && data.artworks.data"
-  >
+  <KeepAlive>
+    <a-scene 
+      class="a-scene"
+      loading-screen="backgroundColor: black; dotsColor: white;"
+      :background="`color: ${data.room.color}`"
+      vr-mode-ui="enabled: false"
+      v-if="data && data.artworks && data.artworks.data"
+    >
 
-    <a-entity 
-      :sound="`src: url(${data.room.sound}); autoplay: true;`" 
-      id="ambient-room-sound"
-    ></a-entity>
-    <a-sky :src="data.room.background_url"></a-sky>
-  
-    <a-assets>
-      <img
-        v-for="(artwork, id) in data.artworks.data" :key="id"
-        :src="artwork.url"
-        crossorigin="anonymous"
-      >
-    </a-assets>
-
-    <a-entity id="mario">
-
-      <a-entity
-        v-for="(artwork, index) in data.artworks.data" 
-        :key="artwork.id" 
-        :position="entities[index].position" 
-        :rotation="entities[index].rotation"
-      >
-        <a-box
-          geometry="primitive: box" 
-          material="color: black"
-          position="0 4 -0.26"
-          depth="0.5"
-          width="7"
-          height="12"
-        >
-
-        </a-box>
-        <a-image 
-          :id="artwork.id"
+      <a-entity 
+        :sound="`src: url(${data.room.sound}); autoplay: true;`" 
+        id="ambient-room-sound"
+      ></a-entity>
+      <a-sky :src="data.room.background_url"></a-sky>
+    
+      <a-assets>
+        <img
+          v-for="(artwork, id) in data.artworks.data" :key="id"
           :src="artwork.url"
-          width="6.4" 
-          height="8"
-          position="0 5.5 0"
-        ></a-image>
+          crossorigin="anonymous"
+        >
+      </a-assets>
 
-        <a-text 
-          class="title"
-          width="7"
-          baseline="bottom"
-          position="-2.9 .7 0"
-          :value="artwork.title"
-        ></a-text>
-        <a-text 
-          class="description"
-          baseline="top"
-          position="-2.9 .5 0"
-          :value="artwork.description"
-        ></a-text>
-        <a-entity 
-          :sound="`src: url(${artwork.sound}); autoplay: true;`" 
-          id="ambient-artwork-sound"
-        ></a-entity>
+      <a-entity id="mario">
+
+        <a-entity
+          v-for="(artwork, index) in data.artworks.data" 
+          :key="artwork.id" 
+          :position="entities[index].position" 
+          :rotation="entities[index].rotation"
+        >
+          <a-box
+            geometry="primitive: box" 
+            material="color: black"
+            position="0 4 -0.26"
+            depth="0.5"
+            width="7"
+            height="12"
+          >
+
+          </a-box>
+          <a-image 
+            :id="artwork.id"
+            :src="artwork.url"
+            width="6.4" 
+            height="8"
+            position="0 5.5 0"
+          ></a-image>
+
+          <a-text 
+            class="title"
+            width="7"
+            baseline="bottom"
+            position="-2.9 .7 0"
+            :value="artwork.title"
+          ></a-text>
+          <a-text 
+            class="description"
+            baseline="top"
+            position="-2.9 .5 0"
+            :value="artwork.description"
+          ></a-text>
+          <a-entity 
+            :sound="`src: url(${artwork.sound}); autoplay: true;`" 
+            id="ambient-artwork-sound"
+          ></a-entity>
+        </a-entity>
       </a-entity>
-    </a-entity>
-  </a-scene>
+    </a-scene>
+  </KeepAlive>
 </template>
