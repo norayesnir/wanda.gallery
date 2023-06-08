@@ -19,7 +19,6 @@ interface Artwork {
   date: string;
   url: string;
   room_id: number;
-  sound: string;
 }
 
 interface Room {
@@ -45,7 +44,6 @@ const query = gql`
         date
         url
         room_id
-        sound
       }
     },
     room (id: $roomId) {
@@ -157,10 +155,6 @@ positionEntitiesInCircle();
             position="-2.9 .5 0"
             :value="artwork.description"
           ></a-text>
-          <a-entity 
-            :sound="`src: url(${artwork.sound}); autoplay: true;`" 
-            id="ambient-artwork-sound"
-          ></a-entity>
         </a-entity>
       </a-entity>
     </a-scene>
