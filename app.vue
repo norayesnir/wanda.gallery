@@ -33,7 +33,7 @@ export default {
 
   .page-content{
     padding-top: 96px;
-    padding-bottom: 50vh;
+    padding-bottom: 10vh;
   }
 }
 </style>

@@ -79,7 +79,7 @@ const { data, refresh } = useAsyncQuery<RoomData>(query, { categoryId });
 
 <style scoped lang="scss">
 .page{
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .room-selection{
   width: 100%;
@@ -90,6 +90,7 @@ const { data, refresh } = useAsyncQuery<RoomData>(query, { categoryId });
   flex-wrap: wrap;
   flex-direction: column;
   padding: 48px;
+  padding-top: 100px;
 
   .room{
     display: flex;
