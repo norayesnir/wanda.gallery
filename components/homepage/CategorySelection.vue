@@ -29,12 +29,15 @@ const { data, error, refresh } = useAsyncQuery<CategoryData>(query);
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <h1>Projects</h1>
-    <div class="category-selection">
+    <div 
+      class="category-selection" 
+    >
       <div 
         class="category"
         v-for="(category, key) in data.categories.data"
+        :class="{'single-category' : (data.categories.data.length <= 1)}"
       >
         <img 
           class="image" 
@@ -52,9 +55,14 @@ const { data, error, refresh } = useAsyncQuery<CategoryData>(query);
 </template>
 
 <style scoped lang="scss">
+.container{
+  width: 100%;
+}
+
 h1{
   margin-bottom: 64px;
 }
+
 .category-selection{
   width: 100%;
   display: flex;
@@ -78,10 +86,15 @@ h1{
       display: flex;
       flex-direction: column;
       gap: 8px;
+      max-width: 470px;
 
       align-items: left;
     }
   }
+}
+
+.single-category{
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1000px) {

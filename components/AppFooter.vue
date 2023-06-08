@@ -42,6 +42,9 @@
   display: flex;
   flex-direction: column-reverse;
   gap: 16px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   
   .content{
     p{

@@ -2,10 +2,6 @@
   <div class="hero">
     <div class="content">
       <h1>Wanda Tuerlinckx Gallery</h1>
-      <div class="buttons">
-        <TemplateButton to="https://wandatuerlinckx.com" color="primary" name="See my work" />
-        <TemplateButton to="https://wandatuerlinckx.com/about/" color="secondary" name="About me" />
-      </div>
     </div>
     <img class="image" src="/erica-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp" alt="erica-hiroshi-ishiguro-laboratories-kyoto-japan">
   </div>

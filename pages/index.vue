@@ -31,6 +31,7 @@
 
   .section-two{
     min-height: 100vh;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;

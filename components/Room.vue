@@ -37,7 +37,7 @@ interface CollectedData {
 
 const query = gql`
   query($roomId: Int!) {
-    artworks(room_id: $roomId, per_page: 10) {
+    artworks(room_id: $roomId) {
       data {
         id
         title

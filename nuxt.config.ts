@@ -8,6 +8,20 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://aframe.io/releases/1.2.0/aframe.min.js',
+        },
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-FE9JGB36JR',
+          async: true,
+        },
+        {
+          innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FE9JGB36JR');
+          `,
+          type: 'text/javascript',
         }
       ]
     }
@@ -39,5 +53,5 @@ export default defineNuxtConfig({
   components: {
     global: true,
     dirs: ['~/components']
-  }
+  },
 })
