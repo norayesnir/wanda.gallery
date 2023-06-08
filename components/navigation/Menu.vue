@@ -56,11 +56,14 @@ const navigation = useNavigationMenuStore();
     }
 
     .navigation-icons{
+      content: '';
       display: flex;
       gap: 16px;
       justify-content: right;
       align-items: center;
       margin-left: 6px;
+      min-width: 48px;
+      min-height: 24px;
       
       grid-area: 1 / 3;
     }
