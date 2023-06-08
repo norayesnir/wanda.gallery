@@ -7,7 +7,7 @@
         <TemplateButton to="https://wandatuerlinckx.com/about/" name="More About Me"/>
       </div>
     </div>
-    <img class="image" src="/android-u-osaka-university-osaka-japan-wanda-tuerlinckx.webp" alt="erica-hiroshi-ishiguro-laboratories-kyoto-japan">
+    <img class="image" src="/hero-image.webp" alt="hero-image">
   </div>
 </template>
 
@@ -72,7 +72,7 @@
       }
 
       .image{
-        max-width: 550px;
+        max-width: 1000px;
       }
     }
   }
