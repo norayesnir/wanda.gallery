@@ -2,8 +2,12 @@
   <div class="hero">
     <div class="content">
       <h1>Wanda Tuerlinckx Gallery</h1>
+      <p>Wanda Tuerlinckx, originally from Belgium, is a fine art photographer, living and working in Amsterdam. Her photos are part of the collections of the Rijksmuseum Amsterdam and the Amsterdam City Archives.</p>
+      <div class="buttons">
+        <TemplateButton to="https://wandatuerlinckx.com/about/" name="More About Me"/>
+      </div>
     </div>
-    <img class="image" src="/erica-hiroshi-ishiguro-laboratories-kyoto-japan-wanda-tuerlinckx.webp" alt="erica-hiroshi-ishiguro-laboratories-kyoto-japan">
+    <img class="image" src="/android-u-osaka-university-osaka-japan-wanda-tuerlinckx.webp" alt="erica-hiroshi-ishiguro-laboratories-kyoto-japan">
   </div>
 </template>
 
@@ -25,7 +29,10 @@
         line-height: 48px;
         letter-spacing: 0.15em;
         width: 300px;
-        
+      }
+
+      p{
+        margin-top: 10px;
       }
 
       .buttons{

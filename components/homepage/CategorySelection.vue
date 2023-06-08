@@ -114,7 +114,7 @@ h1{
         }
 
         p{
-          font-size: 24px;
+          font-size: 16px;
           margin: 0;
         }
       }
