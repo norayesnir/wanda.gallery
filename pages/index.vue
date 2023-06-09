@@ -30,7 +30,7 @@
 
 
   .section-two{
-    min-height: 100vh;
+    min-height: calc(100vh + (48px * 2));
     width: 100%;
     overflow: hidden;
     display: flex;

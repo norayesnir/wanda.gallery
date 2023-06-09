@@ -5,6 +5,15 @@ export default defineNuxtConfig({
       charset: 'uft-8',
       viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
       title: 'Wanda Gallery',
+      meta: [ 
+        { name: 'theme-color', content: '#BCC6CC',} ,// IOS background color (Safari)
+        { name: 'description', content: 'Wanda Tuerlinckx, originally from Belgium, is a fine art photographer, living and working in Amsterdam. Her photos are part of the collections of the Rijksmuseum Amsterdam and the Amsterdam City Archives.' },
+        { name: 'author', content: 'Wanda Tuerlinckx'},
+        { name: 'keywords', content: 'Virtual, Gallery, Virtual Gallery, 3D, Wanda Tuerlinckx, Wanda, Tuerlinckx, Photographer, City Archives, Wanda Virtual Gallery, Wanda Tuerlinckx Virtual Gallery, Robots, Humanoids, Androids, Biomimetics, Monotone, Greyscale, wanda.gallery, Fine art, revolution, transform, life, work, relationships, humans, human, experience, impactful, human story'},
+        { property: 'og:title', content: 'Wanda Tuerlinckx'},
+        { property: 'og:description', content: 'Wanda Tuerlinckx, originally from Belgium, is a fine art photographer, living and working in Amsterdam. Her photos are part of the collections of the Rijksmuseum Amsterdam and the Amsterdam City Archives.'},
+        { property: 'og:image', content: '~/public/hero-image.webp'},
+      ],
       script: [
         {
           src: 'https://aframe.io/releases/1.2.0/aframe.min.js',
