@@ -1,10 +1,40 @@
+<script setup lang="ts">
+  interface Hero {
+    id: number;
+    title: string;
+    intro: string;
+    url: string;
+  }
+
+  interface HeroData {
+    pages: {
+      data: Hero[];
+    }
+  }
+
+  const query = gql`
+  query {
+    pages {
+      data {
+        id
+        title
+        intro
+        url
+      }
+    }
+  }
+`;
+
+const { data, error, refresh } = useAsyncQuery<HeroData>(query);
+</script>
+
 <template>
-  <div class="hero">
+  <div class="hero" v-for="hero in data.pages.data" :key="hero.id">
     <div class="content">
-      <h1>Wanda Tuerlinckx Gallery</h1>
-      <p>Wanda Tuerlinckx, originally from Belgium, is a fine art photographer, living and working in Amsterdam. Her photos are part of the collections of the Rijksmuseum Amsterdam and the Amsterdam City Archives.</p>
+      <h1>{{ hero.title }}</h1>
+      <p>{{ hero.intro }}</p>
     </div>
-    <img class="image" src="/hero-image.webp" alt="hero-image">
+    <img class="image" :src="hero.url" :alt="hero.title">
   </div>
 </template>
 
